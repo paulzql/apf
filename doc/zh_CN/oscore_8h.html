@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/oscore.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">oscore.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>跨平台基本函数  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;sys/socket.h&gt;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;errno.h&gt;</code><br />
+<code>#include &lt;sys/stat.h&gt;</code><br />
+<code>#include &lt;sys/time.h&gt;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+<code>#include &lt;semaphore.h&gt;</code><br />
+<code>#include &lt;inttypes.h&gt;</code><br />
+<code>#include &lt;fcntl.h&gt;</code><br />
+</div>
+<p><a href="oscore_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union__UEndianTest.html">_UEndianTest</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">大端/小端CPU测试类型  <a href="union__UEndianTest.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a26769957ec1a2beaf223f33b66ee64ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26769957ec1a2beaf223f33b66ee64ab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INVALID_SOCKET</b>&#160;&#160;&#160;-1</td></tr>
+<tr class="separator:a26769957ec1a2beaf223f33b66ee64ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdbb9d84bd17efd2ae7290e664992c48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdbb9d84bd17efd2ae7290e664992c48"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>closesocket</b>&#160;&#160;&#160;::close</td></tr>
+<tr class="separator:afdbb9d84bd17efd2ae7290e664992c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d5214d1f7774c98bbfb5a2f18a4d95c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d5214d1f7774c98bbfb5a2f18a4d95c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>msleep</b>(t)&#160;&#160;&#160;usleep(t*1000)</td></tr>
+<tr class="separator:a6d5214d1f7774c98bbfb5a2f18a4d95c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84a29002ab81c719c0d07bb446296e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84a29002ab81c719c0d07bb446296e0"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>INFINITE</b>&#160;&#160;&#160;0x0FFFFFFF</td></tr>
+<tr class="separator:aa84a29002ab81c719c0d07bb446296e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8782a401fbf55261460863fc2f8df1ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8782a401fbf55261460863fc2f8df1ce"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LITTLE_ENDIAN</b>&#160;&#160;&#160;g_endianTest.little_endian</td></tr>
+<tr class="separator:a8782a401fbf55261460863fc2f8df1ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026447fbf22a6547b69813db8f94b85a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026447fbf22a6547b69813db8f94b85a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a026447fbf22a6547b69813db8f94b85a">NET32</a>(n)&#160;&#160;&#160;g_endianTest.little_endian ? ((n&gt;&gt;24)|((n&gt;&gt;8)&amp;0xFF00)|((n&lt;&lt;8)&amp;0xFF0000)|(n&lt;&lt;24)):n</td></tr>
+<tr class="memdesc:a026447fbf22a6547b69813db8f94b85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将32位数字转换为网络字节序 <br /></td></tr>
+<tr class="separator:a026447fbf22a6547b69813db8f94b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4246b1c736167fccb219f610611ec682"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4246b1c736167fccb219f610611ec682"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a4246b1c736167fccb219f610611ec682">NET16</a>(n)&#160;&#160;&#160;g_endianTest.little_endian ? (((n&gt;&gt;8)&amp;0x00FF)|((n&lt;&lt;8)&amp;0xFF00)):n</td></tr>
+<tr class="memdesc:a4246b1c736167fccb219f610611ec682"><td class="mdescLeft">&#160;</td><td class="mdescRight">将16位数字转换为网络字节序 <br /></td></tr>
+<tr class="separator:a4246b1c736167fccb219f610611ec682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:ab8a4083c1e5d7c4172936f59e67ce798"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab8a4083c1e5d7c4172936f59e67ce798"></a>
+typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>SOCKET</b></td></tr>
+<tr class="separator:ab8a4083c1e5d7c4172936f59e67ce798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c8d3105020f3d09506b7be7736dffb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1c8d3105020f3d09506b7be7736dffb"></a>
+typedef union <a class="el" href="union__UEndianTest.html">_UEndianTest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb">UEndianTest</a></td></tr>
+<tr class="memdesc:aa1c8d3105020f3d09506b7be7736dffb"><td class="mdescLeft">&#160;</td><td class="mdescRight">大端/小端CPU测试类型 <br /></td></tr>
+<tr class="separator:aa1c8d3105020f3d09506b7be7736dffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7537c66fd3eceac0d9f1d9b610b14eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7537c66fd3eceac0d9f1d9b610b14eb"></a>
+typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">THREAD_FUNC</a> )(void *)</td></tr>
+<tr class="memdesc:ac7537c66fd3eceac0d9f1d9b610b14eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程函数类型 <br /></td></tr>
+<tr class="separator:ac7537c66fd3eceac0d9f1d9b610b14eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化互斥锁  <a href="#a1a7c2242bb0cb95a71cd3e2e80a94894">更多...</a><br /></td></tr>
+<tr class="separator:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b45fb41988604e9393eecc929208679"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a5b45fb41988604e9393eecc929208679"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放互斥锁  <a href="#a5b45fb41988604e9393eecc929208679">更多...</a><br /></td></tr>
+<tr class="separator:a5b45fb41988604e9393eecc929208679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01996d487162206af12d872678575ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a01996d487162206af12d872678575ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">互斥锁加锁  <a href="#a01996d487162206af12d872678575ed4">更多...</a><br /></td></tr>
+<tr class="separator:a01996d487162206af12d872678575ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518452e4babb18c91965909070db571c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a518452e4babb18c91965909070db571c"><td class="mdescLeft">&#160;</td><td class="mdescRight">互斥锁解锁  <a href="#a518452e4babb18c91965909070db571c">更多...</a><br /></td></tr>
+<tr class="separator:a518452e4babb18c91965909070db571c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2737ec3e56b4441035d1725df192c394"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a2737ec3e56b4441035d1725df192c394">init_semaphore</a> (sem_t *sem, unsigned int initcount)</td></tr>
+<tr class="memdesc:a2737ec3e56b4441035d1725df192c394"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化信号量  <a href="#a2737ec3e56b4441035d1725df192c394">更多...</a><br /></td></tr>
+<tr class="separator:a2737ec3e56b4441035d1725df192c394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7e85780db98165a8e9422aa83410ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#afa7e85780db98165a8e9422aa83410ff">uninit_semaphore</a> (sem_t *sem)</td></tr>
+<tr class="memdesc:afa7e85780db98165a8e9422aa83410ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放信号量  <a href="#afa7e85780db98165a8e9422aa83410ff">更多...</a><br /></td></tr>
+<tr class="separator:afa7e85780db98165a8e9422aa83410ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16e911fc3033caee489d1edb8b78e90e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a16e911fc3033caee489d1edb8b78e90e">wait_semaphore</a> (sem_t *sem, unsigned long waittime)</td></tr>
+<tr class="memdesc:a16e911fc3033caee489d1edb8b78e90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待信号  <a href="#a16e911fc3033caee489d1edb8b78e90e">更多...</a><br /></td></tr>
+<tr class="separator:a16e911fc3033caee489d1edb8b78e90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6742f11e48962f399b10899ede70ec8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#ab6742f11e48962f399b10899ede70ec8">post_semaphore</a> (sem_t *sem)</td></tr>
+<tr class="memdesc:ab6742f11e48962f399b10899ede70ec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">增加信号  <a href="#ab6742f11e48962f399b10899ede70ec8">更多...</a><br /></td></tr>
+<tr class="separator:ab6742f11e48962f399b10899ede70ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e13e12572b3ee9c271f7ecfb28c38b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a4e13e12572b3ee9c271f7ecfb28c38b4">begin_thread</a> (pthread_t *pthread, <a class="el" href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">THREAD_FUNC</a> func, void *arg)</td></tr>
+<tr class="memdesc:a4e13e12572b3ee9c271f7ecfb28c38b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建线程  <a href="#a4e13e12572b3ee9c271f7ecfb28c38b4">更多...</a><br /></td></tr>
+<tr class="separator:a4e13e12572b3ee9c271f7ecfb28c38b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81b8c9c1f4fc788cd1ab9e24bc4c958a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a">wait_thread</a> (pthread_t *pthread)</td></tr>
+<tr class="memdesc:a81b8c9c1f4fc788cd1ab9e24bc4c958a"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待线程结束  <a href="#a81b8c9c1f4fc788cd1ab9e24bc4c958a">更多...</a><br /></td></tr>
+<tr class="separator:a81b8c9c1f4fc788cd1ab9e24bc4c958a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e924ff42cc9eaac6130f029a37d700b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a9e924ff42cc9eaac6130f029a37d700b">random_int</a> ()</td></tr>
+<tr class="memdesc:a9e924ff42cc9eaac6130f029a37d700b"><td class="mdescLeft">&#160;</td><td class="mdescRight">随机生成一个数字  <a href="#a9e924ff42cc9eaac6130f029a37d700b">更多...</a><br /></td></tr>
+<tr class="separator:a9e924ff42cc9eaac6130f029a37d700b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b958915c8122e70a0ab1726c881d2e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#ab6b958915c8122e70a0ab1726c881d2e">clock_tick</a> ()</td></tr>
+<tr class="memdesc:ab6b958915c8122e70a0ab1726c881d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取CPU时间(毫秒)  <a href="#ab6b958915c8122e70a0ab1726c881d2e">更多...</a><br /></td></tr>
+<tr class="separator:ab6b958915c8122e70a0ab1726c881d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c8b2ad0ea491a6642e5e1cbd358c89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58c8b2ad0ea491a6642e5e1cbd358c89"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a58c8b2ad0ea491a6642e5e1cbd358c89">yield</a> ()</td></tr>
+<tr class="memdesc:a58c8b2ad0ea491a6642e5e1cbd358c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放CPU使用权 <br /></td></tr>
+<tr class="separator:a58c8b2ad0ea491a6642e5e1cbd358c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:a44740bf21b4b4bed7e3dfabb6a5a73f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44740bf21b4b4bed7e3dfabb6a5a73f2"></a>
+<a class="el" href="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb">UEndianTest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="oscore_8h.html#a44740bf21b4b4bed7e3dfabb6a5a73f2">g_endianTest</a></td></tr>
+<tr class="memdesc:a44740bf21b4b4bed7e3dfabb6a5a73f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">大端/小端CPU测试对象 <br /></td></tr>
+<tr class="separator:a44740bf21b4b4bed7e3dfabb6a5a73f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>跨平台基本函数 </p>
+<hr/>
+<p>Copyright (C) 2013 - 2013, Paul Zhou, <a href="#" onclick="location.href='mai'+'lto:'+'qia'+'nl'+'ong'+'.z'+'hou'+'@g'+'mai'+'l.'+'com'; return false;">qianl<span style="display: none;">.nosp@m.</span>ong.<span style="display: none;">.nosp@m.</span>zhou@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a>.</p>
+<p>This software is licensed as described in the file COPYING, which you should have received as part of this distribution.</p>
+<p>You may opt to use, copy, modify, merge, publish, distribute and/or sell copies of the Software, and permit persons to whom the Software is furnished to do so, under the terms of the COPYING file.</p>
+<p>This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. </p>
+
+<p>在文件 <a class="el" href="oscore_8h_source.html">oscore.h</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a4e13e12572b3ee9c271f7ecfb28c38b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int begin_thread </td>
+          <td>(</td>
+          <td class="paramtype">pthread_t *&#160;</td>
+          <td class="paramname"><em>pthread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">THREAD_FUNC</a>&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>创建线程 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pthread</td><td>线程指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>线程执行函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg</td><td>线程参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00128">128</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                                                                  {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> pthread_create((pthread_t*)pthread, NULL, func, arg);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab6b958915c8122e70a0ab1726c881d2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long clock_tick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取CPU时间(毫秒) </p>
+<dl class="section return"><dt>返回</dt><dd>CPU时间 </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00137">137</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                           {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">struct </span>timespec ts;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">    #ifdef __MACH__ // OS X does not have clock_gettime, use clock_get_time</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        clock_serv_t cclock;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        mach_timespec_t mts;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &amp;cclock);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        clock_get_time(cclock, &amp;mts);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        mach_port_deallocate(mach_task_self(), cclock);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        ts.tv_sec = mts.tv_sec;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        ts.tv_nsec = mts.tv_nsec;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// note: need load library -lrt</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        clock_gettime(CLOCK_REALTIME, &amp;ts);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> (ts.tv_sec * 1000 + ts.tv_nsec / 1000000);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1a7c2242bb0cb95a71cd3e2e80a94894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int init_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化互斥锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>初始化状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00103">103</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    pthread_mutexattr_t attr;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    memset(pmutex, 0, <span class="keyword">sizeof</span>(pthread_mutex_t));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    memset(&amp;attr, 0, <span class="keyword">sizeof</span>(pthread_mutexattr_t));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    pthread_mutexattr_init(&amp;attr);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// ÉèÖÃ recursive ÊôÐÔ</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    pthread_mutexattr_settype(&amp;attr,PTHREAD_MUTEX_RECURSIVE);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_init(pmutex, &amp;attr);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a2737ec3e56b4441035d1725df192c394"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int init_semaphore </td>
+          <td>(</td>
+          <td class="paramtype">sem_t *&#160;</td>
+          <td class="paramname"><em>sem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>initcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化信号量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sem</td><td>信号量指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">initcount</td><td>初始信号数量 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>初始化状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00156">156</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                        {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    memset(psem, 0, <span class="keyword">sizeof</span>(sem_t));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">char</span> sem_name[100];</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> seq = 1;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    sprintf(sem_name,<span class="stringliteral">&quot;/tmp/%ld-%d.sem&quot;</span>,(<span class="keywordtype">long</span>)getpid(),seq++);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    sem_t* sem_new = sem_open(sem_name, O_CREAT|O_EXCL,S_IWUSR | S_IRUSR,initcount);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span>(sem_new != SEM_FAILED) *psem = (sem_t)sem_new;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> sem_new == SEM_FAILED ? 0 : -1;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">return</span> sem_init(psem, 0, initcount);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a01996d487162206af12d872678575ed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lock_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>互斥锁加锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00120">120</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                        {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_lock(pmutex);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab6742f11e48962f399b10899ede70ec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int post_semaphore </td>
+          <td>(</td>
+          <td class="paramtype">sem_t *&#160;</td>
+          <td class="paramname"><em>sem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>增加信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sem</td><td>信号量指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00218">218</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                                 {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span> sem_post((sem_t*)(*psem));</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> sem_post(psem);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9e924ff42cc9eaac6130f029a37d700b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int random_int </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>随机生成一个数字 </p>
+<dl class="section return"><dt>返回</dt><dd>随机数 </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00232">232</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                 {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;   <span class="comment">// return 32 bits of random stuff</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;   <span class="keywordtype">int</span> init=0;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;   <span class="keywordflow">if</span> ( !init )</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;   {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      init = 1;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      uint64_t tick;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">    #if defined(WIN32)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;          <span class="keyword">volatile</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> lowtick=0,hightick=0;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;          __asm</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;             {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                rdtsc</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                   mov lowtick, eax</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                   mov hightick, edx</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;             }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;          tick = hightick;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;          tick &lt;&lt;= 32;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;          tick |= lowtick;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor">    #elif defined(__GNUC__) &amp;&amp; ( defined(__i686__) || defined(__i386__) )</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;          <span class="keyword">asm</span>(<span class="stringliteral">&quot;rdtsc&quot;</span> : <span class="stringliteral">&quot;=A&quot;</span> (tick));</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="preprocessor">    #elif defined (__SUNPRO_CC) || defined( __sparc__ )</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;          tick = gethrtime();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">    #elif defined(__MACH__)  || defined(__linux)</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;          <span class="keywordtype">int</span> fd=open(<span class="stringliteral">&quot;/dev/random&quot;</span>,O_RDONLY);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;          read(fd,&amp;tick,<span class="keyword">sizeof</span>(tick));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;          closesocket(fd);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">    #     error Need some way to seed the random number generator</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          <span class="keywordtype">int</span> seed = int(tick);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">    #ifdef WIN32</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;          srand(seed);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;          srandom(seed);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;       }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">    #ifdef WIN32</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;       <span class="keywordtype">int</span> r1 = rand();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;       <span class="keywordtype">int</span> r2 = rand();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;       <span class="keywordtype">int</span> ret = (r1&lt;&lt;16) + r2;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;       <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;       <span class="keywordflow">return</span> random();</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5b45fb41988604e9393eecc929208679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int uninit_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放互斥锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00116">116</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                          {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_destroy(pmutex);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="afa7e85780db98165a8e9422aa83410ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int uninit_semaphore </td>
+          <td>(</td>
+          <td class="paramtype">sem_t *&#160;</td>
+          <td class="paramname"><em>sem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放信号量 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sem</td><td>信号量指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00170">170</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                  {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    sem_close((sem_t*)(*psem));</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    sem_destroy(psem);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a518452e4babb18c91965909070db571c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unlock_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>互斥锁解锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00124">124</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                          {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_unlock(pmutex);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a16e911fc3033caee489d1edb8b78e90e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wait_semaphore </td>
+          <td>(</td>
+          <td class="paramtype">sem_t *&#160;</td>
+          <td class="paramname"><em>sem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>waittime</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等待信号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sem</td><td>信号量指针 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">waittime</td><td>等待时间（毫秒) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00179">179</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                                           {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keyword">struct </span>timespec ts;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">    #ifdef __APPLE__</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">        // OS X does not have clock_gettime, use clock_get_time</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">        clock_serv_t cclock;</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment">        mach_timespec_t mts;</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">        host_get_clock_service(mach_host_self(), CALENDAR_CLOCK, &amp;cclock);</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">        clock_get_time(cclock, &amp;mts);</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">        mach_port_deallocate(mach_task_self(), cclock);</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">        ts.tv_sec = mts.tv_sec;</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">        ts.tv_nsec = mts.tv_nsec;</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">int</span> ret = sem_trywait(psem);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">while</span> ((waittime &gt; 0) &amp;&amp; ((0 != ret) &amp;&amp; (EINVAL != errno))) {</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> sleep_time = (waittime &lt; 1000 ? waittime : 1000);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            msleep(sleep_time);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            waittime -= sleep_time;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            ret = sem_trywait(psem);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        clock_gettime(CLOCK_REALTIME, &amp;ts);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    ts.tv_sec = time(NULL) + waittime /1000;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    ts.tv_nsec += (waittime % 1000 ) * 1000;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#ifdef __APPLE__</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment">    int sem_timedwait (sem_t *sem,  const struct timespec *abs_timeout);</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment">    return sem_timedwait((sem_t*)(*psem), &amp;ts);</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> sem_timedwait(psem, &amp;ts);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a81b8c9c1f4fc788cd1ab9e24bc4c958a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wait_thread </td>
+          <td>(</td>
+          <td class="paramtype">pthread_t *&#160;</td>
+          <td class="paramname"><em>pthread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>等待线程结束 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pthread</td><td>线程指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00132">132</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> *retval;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> pthread_join(*pthread, &amp;retval);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

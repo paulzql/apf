@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: src/interface.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*!**************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief 接口(Interface)内部函数实现文件</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2013 - 2013, Paul Zhou, &lt;qianlong.zhou@gmail.com&gt;.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This software is licensed as described in the file COPYING, which</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * you should have received as part of this distribution.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * copies of the Software, and permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * furnished to do so, under the terms of the COPYING file.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This software is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTY OF ANY</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * KIND, either express or implied.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">interface.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="class_8h.html">class.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module_8h.html">module.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>apf {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Create an object with the class id.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span>* APFCreateObject(<span class="keyword">const</span> <a class="code" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&amp; <a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a>&amp; class_info) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span>* pobj = <a class="code" href="classapf_1_1Class.html#a50742cb0f1444f007a98991827df1e9f">Class::CreateObject</a>(clsid, &amp;class_info);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (!pobj &amp;&amp; <a class="code" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">apf::Module::Instance</a>()-&gt;object_creator) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        pobj = <a class="code" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">apf::Module::Instance</a>()-&gt;<a class="code" href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">object_creator</a>(clsid, class_info);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> pobj;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">//namespace</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="ttc" id="class_8h_html"><div class="ttname"><a href="class_8h.html">class.h</a></div><div class="ttdoc">APF Class 类头文件 </div></div>
+<div class="ttc" id="classapf_1_1Module_html_a425df0bd29e3b4ff49b82252e5e93a9b"><div class="ttname"><a href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">apf::Module::object_creator</a></div><div class="ttdeci">apf::APFCreateObjectFunc object_creator</div><div class="ttdoc">对象创建函数 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00194">module.h:194</a></div></div>
+<div class="ttc" id="classapf_1_1Class_html_a50742cb0f1444f007a98991827df1e9f"><div class="ttname"><a href="classapf_1_1Class.html#a50742cb0f1444f007a98991827df1e9f">apf::Class::CreateObject</a></div><div class="ttdeci">static void * CreateObject(const APFClassID &amp;class_id, ClassEntry *class_info)</div><div class="ttdoc">跟据提供的类ID创建对象 </div><div class="ttdef"><b>Definition:</b> <a href="class_8cpp_source.html#l00069">class.cpp:69</a></div></div>
+<div class="ttc" id="classapf_1_1Module_html_a8690f3b39a552d8fb1d2b962509d436d"><div class="ttname"><a href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">apf::Module::Instance</a></div><div class="ttdeci">static Module * Instance()</div><div class="ttdoc">获取单实例 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00187">module.h:187</a></div></div>
+<div class="ttc" id="interface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div><div class="ttdoc">接口定义文件 </div></div>
+<div class="ttc" id="classentry_8h_html_a46f6756503d8121265e6fef379ea9f15"><div class="ttname"><a href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a></div><div class="ttdeci">#define APFClassID</div><div class="ttdoc">类ID类型 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00025">classentry.h:25</a></div></div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="module_8h_html"><div class="ttname"><a href="module_8h.html">module.h</a></div><div class="ttdoc">模块(插件)相关的宏定义文件 </div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

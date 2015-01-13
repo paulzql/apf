@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/interface.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="interface_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*!**************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief 接口定义文件</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2013 - 2013, Paul Zhou, &lt;qianlong.zhou@gmail.com&gt;.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This software is licensed as described in the file COPYING, which</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * you should have received as part of this distribution.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * copies of the Software, and permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * furnished to do so, under the terms of the COPYING file.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This software is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTY OF ANY</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * KIND, either express or implied.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef INTERFACE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define INTERFACE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="classentry_8h.html">classentry.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="class_8h.html">class.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// the macro to define classid</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="interface_8h.html#a31d0da59402735416dfa715b94f479ea">   30</a></span>&#160;<span class="preprocessor">#define APF_DECLARE_CLASSID(clsid, str)  static const APFClassID clsid(str);</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// Declare GetInterfaceID() in a interface.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_8h.html#acbc4d603617d53b2a0afe4a3b7f7527d">   46</a></span>&#160;<span class="preprocessor">#define APF_DECLARE_INTERFACE(_Interface) \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    public:\</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    static APFInterfaceID GetInterfaceID() { static APFInterfaceID id = apf::APFHashKey(#_Interface); return id; }\</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// Begin definition group of how many interfaces supported by the class.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="interface_8h.html#a775df2b8796c7afc6fdac1393ae928f5">   65</a></span>&#160;<span class="preprocessor">#define APF_BEGIN_CLASS()  \</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">public: \</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    static bool DoQueryInterface(APFInterfaceID iid) {\</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// Indicate a interface is supported by the class.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="interface_8h.html#a52cb242e7fddcd3d183e089b7745221f">   76</a></span>&#160;<span class="preprocessor">#define APF_INTERFACE_ENTRY(_Interface)    \</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">        if (iid == _Interface::GetInterfaceID()) {      \</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">            return true;    \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">// Indicate this class is derived from a implement class.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// All interfaces of the base class are supported by this class.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="interface_8h.html#a97217d3ace267489651fc919917a5c6d">   90</a></span>&#160;<span class="preprocessor">#define APF_USE_INTERFACE_ENTRY(_BaseClass)       \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        if (_BaseClass::DoQueryInterface(iid)) { \</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">            return true;    \</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">        }</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">// End group of class definition.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="interface_8h.html#a3de2b029f089c00fdba5406b2d0f0fdc">  100</a></span>&#160;<span class="preprocessor">#define APF_END_CLASS() \</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">        return false; \</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">    }</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">namespace </span>apf {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span>* (*APFCreateObjectFunc)(<span class="keyword">const</span> <a class="code" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&amp;, <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a>&amp;);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// internal functions //////////////////////////////////////////</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span><span class="comment">// hash string to long</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">long</span> APFHashKey(<span class="keyword">const</span> <span class="keywordtype">char</span>* str) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">long</span> value = 0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">while</span> (*str) {value = (value&lt;&lt;5) + value + *str++;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment">// Create an object with the class id.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">void</span>* APFCreateObject(<span class="keyword">const</span> <a class="code" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&amp; <a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a>&amp; class_entry);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">// An autoptr class with a specified interface.</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> InterfaceType&gt;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html">  143</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1Interface.html">Interface</a> {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// Copy constructor.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#ad13ed478a1860ce6402275d504d9ca63">  150</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classapf_1_1Interface.html#ad13ed478a1860ce6402275d504d9ca63">Interface</a>(<a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType&gt;</a>&amp; inf) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span> (inf.interface_) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            interface_ = inf.interface_;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            reference_count_ = inf.reference_count_;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            class_info_      = inf.<a class="code" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">class_info</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            (*reference_count_)++;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// Copy constructor.</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> InterfaceType2&gt;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#aeb1f1449559bfad1d835071d0a996b05">  166</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classapf_1_1Interface.html#aeb1f1449559bfad1d835071d0a996b05">Interface</a>(<span class="keyword">const</span> <a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType2&gt;</a>&amp; inf) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span> (inf) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">if</span> (inf.<a class="code" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">class_info</a>().query_interface(InterfaceType::GetInterfaceID())) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                interface_ = <span class="keyword">reinterpret_cast&lt;</span>InterfaceType*<span class="keyword">&gt;</span>(inf.<a class="code" href="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2">P</a>());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                class_info_ = inf.<a class="code" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">class_info</a>();</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                reference_count_ = (<span class="keywordtype">long</span>*)(inf.<a class="code" href="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816">reference_count</a>());</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                (*reference_count_)++;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// constructor. will create an object with the clsid</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a080edfe38399127de2f3d44eed5719c9">  183</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classapf_1_1Interface.html#a080edfe38399127de2f3d44eed5719c9">Interface</a>(<span class="keyword">const</span> <a class="code" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&amp; clsid) {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040">Create</a>(clsid);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// default constructor.</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a17f7440aac455489a304d71dbff0d81f">  192</a></span>&#160;    <a class="code" href="classapf_1_1Interface.html#a17f7440aac455489a304d71dbff0d81f">Interface</a>() {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// checking interface, interface must have GetInterfaceID() function</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="comment">// see APF_INTERFACE</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        InterfaceType::GetInterfaceID();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// Destructor</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a875b4bd0680611aa2f195cca7acb04ee">  204</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classapf_1_1Interface.html#a875b4bd0680611aa2f195cca7acb04ee">~Interface</a>() {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c">Release</a>();</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a937b53f2a7ffc481145045c0f2db76fa">  213</a></span>&#160;    <a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType&gt;</a>&amp; <a class="code" href="classapf_1_1Interface.html#a937b53f2a7ffc481145045c0f2db76fa">operator=</a>(<a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType&gt;</a>&amp; inf) {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <a class="code" href="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c">Release</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">if</span> (inf.interface_) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            interface_ = inf.interface_;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;            class_info_ = inf.<a class="code" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">class_info</a>();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            reference_count_ = inf.reference_count_;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;            (*reference_count_)++;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#aff2bf1caa04680bb984668471e421448">  228</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Interface.html#aff2bf1caa04680bb984668471e421448">operator==</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="comment">//ASSERT(0 == nul);</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span> NULL == interface_;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#ad0944a2aaca6b449e63b23d50dfece03">  237</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Interface.html#ad0944a2aaca6b449e63b23d50dfece03">operator!=</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">//ASSERT(0 == nul);</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">return</span> NULL == interface_;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#ae6863c31c159bd96b7a1bb4829e02a76">  246</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Interface.html#ae6863c31c159bd96b7a1bb4829e02a76">operator==</a>(<span class="keyword">const</span> <a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType&gt;</a>&amp; src)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">return</span> interface_ == src.interface_;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a46bef4aa3c275d86296666f6b0a00adb">  254</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Interface.html#a46bef4aa3c275d86296666f6b0a00adb">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classapf_1_1Interface.html">Interface&lt;InterfaceType&gt;</a>&amp; src)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">return</span> interface_ != src.interface_;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#ae467b150711d00d96cc74f8626ade50b">  262</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keywordflow">return</span> NULL != interface_;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a6297e14533529bbec5b629f35faea24f">  270</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Interface.html#a6297e14533529bbec5b629f35faea24f">operator!</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="keywordflow">return</span> NULL == interface_;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2">  279</a></span>&#160;    <span class="keyword">inline</span> InterfaceType* <a class="code" href="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2">P</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">return</span> interface_;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816">  288</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">long</span>* <a class="code" href="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816">reference_count</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">return</span> reference_count_;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">  296</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="classapf_1_1ClassEntry.html">ClassEntry</a> <a class="code" href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">class_info</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> class_info_;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a49b5c069a63781e540408813253f21fc">  304</a></span>&#160;    <span class="keyword">inline</span> InterfaceType* <a class="code" href="classapf_1_1Interface.html#a49b5c069a63781e540408813253f21fc">operator-&gt;</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">return</span> interface_;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">// Release Interface reference</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="comment">// Note: don&#39;t use the Interface after Release(), until init again.</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c">  313</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c">Release</a>() {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="keywordflow">if</span> (interface_) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            (*reference_count_)--;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">if</span> (0 == *reference_count_) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                class_info_.<a class="code" href="classapf_1_1ClassEntry.html#a838e6aca6cd6fdb72a15368665fcb82f">destroy_object</a>(interface_);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                interface_ = NULL;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="keyword">delete</span> reference_count_;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                reference_count_ = NULL;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            }</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">// Create Interface instance with class id</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040">  332</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040">Create</a>(<span class="keyword">const</span> <a class="code" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&amp; clsid) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="comment">// checking interface, interface must have GetInterfaceID() function</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="comment">// see APF_INTERFACE</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        InterfaceType::GetInterfaceID();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordtype">void</span>* obj = APFCreateObject(clsid, class_info_);</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">if</span> (NULL != obj &amp;&amp; class_info_.<a class="code" href="classapf_1_1ClassEntry.html#a9959c1183be2cfaf51c3b817428b567e">query_interface</a>(InterfaceType::GetInterfaceID())) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            interface_ = <span class="keyword">static_cast&lt;</span>InterfaceType*<span class="keyword">&gt;</span>(obj);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordflow">if</span> (interface_) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            reference_count_ = <span class="keyword">new</span> long;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            *reference_count_ = 1;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        }</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// reset vars</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">  352</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">Reset</a>() {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        interface_ = NULL;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        reference_count_ = NULL;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        class_info_ = <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a>();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">// pointer reference count</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordtype">long</span> *reference_count_;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">// object pointer</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    InterfaceType *interface_;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// object info</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <a class="code" href="classapf_1_1ClassEntry.html">ClassEntry</a> class_info_;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;};</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;} <span class="comment">// namespace</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#endif // INTERFACE_H</span></div>
+<div class="ttc" id="class_8h_html"><div class="ttname"><a href="class_8h.html">class.h</a></div><div class="ttdoc">APF Class 类头文件 </div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a937b53f2a7ffc481145045c0f2db76fa"><div class="ttname"><a href="classapf_1_1Interface.html#a937b53f2a7ffc481145045c0f2db76fa">apf::Interface::operator=</a></div><div class="ttdeci">Interface&lt; InterfaceType &gt; &amp; operator=(Interface&lt; InterfaceType &gt; &amp;inf)</div><div class="ttdoc">重载赋值操作符 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00213">interface.h:213</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a5250ce98bd102050aba69e1e66b0fa6f"><div class="ttname"><a href="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f">apf::Interface::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">重新初始化内部变量 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00352">interface.h:352</a></div></div>
+<div class="ttc" id="classentry_8h_html"><div class="ttname"><a href="classentry_8h.html">classentry.h</a></div><div class="ttdoc">类信息实体类头文件 </div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a095773cec3eb4e1b829d3ee3b516d192"><div class="ttname"><a href="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192">apf::Interface::class_info</a></div><div class="ttdeci">const ClassEntry class_info() const </div><div class="ttdoc">获取类信息实体 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00296">interface.h:296</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_ad13ed478a1860ce6402275d504d9ca63"><div class="ttname"><a href="classapf_1_1Interface.html#ad13ed478a1860ce6402275d504d9ca63">apf::Interface::Interface</a></div><div class="ttdeci">Interface(Interface&lt; InterfaceType &gt; &amp;inf)</div><div class="ttdoc">拷贝构造函数(同类型) </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00150">interface.h:150</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_aff2bf1caa04680bb984668471e421448"><div class="ttname"><a href="classapf_1_1Interface.html#aff2bf1caa04680bb984668471e421448">apf::Interface::operator==</a></div><div class="ttdeci">bool operator==(const int) const </div><div class="ttdoc">重载等于操作符(主要用于与NULL比较） </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00228">interface.h:228</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a6297e14533529bbec5b629f35faea24f"><div class="ttname"><a href="classapf_1_1Interface.html#a6297e14533529bbec5b629f35faea24f">apf::Interface::operator!</a></div><div class="ttdeci">bool operator!() const </div><div class="ttdoc">重载非真操作符 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00270">interface.h:270</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html"><div class="ttname"><a href="classapf_1_1Interface.html">apf::Interface</a></div><div class="ttdoc">智能指针接口 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00143">interface.h:143</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a46bef4aa3c275d86296666f6b0a00adb"><div class="ttname"><a href="classapf_1_1Interface.html#a46bef4aa3c275d86296666f6b0a00adb">apf::Interface::operator!=</a></div><div class="ttdeci">bool operator!=(const Interface&lt; InterfaceType &gt; &amp;src) const </div><div class="ttdoc">重载不等于操作符 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00254">interface.h:254</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a68554712172eede0c79b9aaa29be08d2"><div class="ttname"><a href="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2">apf::Interface::P</a></div><div class="ttdeci">InterfaceType * P() const </div><div class="ttdoc">获取内部对象指针 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00279">interface.h:279</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a49b5c069a63781e540408813253f21fc"><div class="ttname"><a href="classapf_1_1Interface.html#a49b5c069a63781e540408813253f21fc">apf::Interface::operator-&gt;</a></div><div class="ttdeci">InterfaceType * operator-&gt;() const </div><div class="ttdoc">重载指针操作符 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00304">interface.h:304</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_aeb1f1449559bfad1d835071d0a996b05"><div class="ttname"><a href="classapf_1_1Interface.html#aeb1f1449559bfad1d835071d0a996b05">apf::Interface::Interface</a></div><div class="ttdeci">Interface(const Interface&lt; InterfaceType2 &gt; &amp;inf)</div><div class="ttdoc">拷贝构造函数(不同类型) </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00166">interface.h:166</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a080edfe38399127de2f3d44eed5719c9"><div class="ttname"><a href="classapf_1_1Interface.html#a080edfe38399127de2f3d44eed5719c9">apf::Interface::Interface</a></div><div class="ttdeci">Interface(const APFClassID &amp;clsid)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00183">interface.h:183</a></div></div>
+<div class="ttc" id="classentry_8h_html_a46f6756503d8121265e6fef379ea9f15"><div class="ttname"><a href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a></div><div class="ttdeci">#define APFClassID</div><div class="ttdoc">类ID类型 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00025">classentry.h:25</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a4fab87602dfd451e6a99cf7f28268040"><div class="ttname"><a href="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040">apf::Interface::Create</a></div><div class="ttdeci">void Create(const APFClassID &amp;clsid)</div><div class="ttdoc">通过类ID创建对象(内部使用) </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00332">interface.h:332</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a3c3ea6fd24cfd80d089a799e0fca4816"><div class="ttname"><a href="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816">apf::Interface::reference_count</a></div><div class="ttdeci">const long * reference_count() const </div><div class="ttdoc">获取引用计数指针 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00288">interface.h:288</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a875b4bd0680611aa2f195cca7acb04ee"><div class="ttname"><a href="classapf_1_1Interface.html#a875b4bd0680611aa2f195cca7acb04ee">apf::Interface::~Interface</a></div><div class="ttdeci">virtual ~Interface()</div><div class="ttdoc">析构函数 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00204">interface.h:204</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_ae6863c31c159bd96b7a1bb4829e02a76"><div class="ttname"><a href="classapf_1_1Interface.html#ae6863c31c159bd96b7a1bb4829e02a76">apf::Interface::operator==</a></div><div class="ttdeci">bool operator==(const Interface&lt; InterfaceType &gt; &amp;src) const </div><div class="ttdoc">重载等于操作符 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00246">interface.h:246</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_a17f7440aac455489a304d71dbff0d81f"><div class="ttname"><a href="classapf_1_1Interface.html#a17f7440aac455489a304d71dbff0d81f">apf::Interface::Interface</a></div><div class="ttdeci">Interface()</div><div class="ttdoc">构造默认函数 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00192">interface.h:192</a></div></div>
+<div class="ttc" id="classapf_1_1ClassEntry_html_a9959c1183be2cfaf51c3b817428b567e"><div class="ttname"><a href="classapf_1_1ClassEntry.html#a9959c1183be2cfaf51c3b817428b567e">apf::ClassEntry::query_interface</a></div><div class="ttdeci">QueryInterfaceFunc query_interface</div><div class="ttdoc">查询接口函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00125">classentry.h:125</a></div></div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="classapf_1_1ClassEntry_html_a838e6aca6cd6fdb72a15368665fcb82f"><div class="ttname"><a href="classapf_1_1ClassEntry.html#a838e6aca6cd6fdb72a15368665fcb82f">apf::ClassEntry::destroy_object</a></div><div class="ttdeci">ObjectDestroyerFunc destroy_object</div><div class="ttdoc">销毁对象函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00122">classentry.h:122</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_ad0944a2aaca6b449e63b23d50dfece03"><div class="ttname"><a href="classapf_1_1Interface.html#ad0944a2aaca6b449e63b23d50dfece03">apf::Interface::operator!=</a></div><div class="ttdeci">bool operator!=(const int) const </div><div class="ttdoc">重载不等于操作符(主要用于与NULL比较） </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00237">interface.h:237</a></div></div>
+<div class="ttc" id="classapf_1_1ClassEntry_html"><div class="ttname"><a href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></div><div class="ttdoc">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00051">classentry.h:51</a></div></div>
+<div class="ttc" id="classapf_1_1Interface_html_acac961e6dd4d236c169284d2fbb8846c"><div class="ttname"><a href="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c">apf::Interface::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdoc">释放所有资源 </div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00313">interface.h:313</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

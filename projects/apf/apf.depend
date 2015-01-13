@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1371539743 source:/home/paul-ubuntu/workspace/apf/src/class.cpp
+	<assert.h>
+	"class.h"
+	"oscore.h"
+
+1371525801 /home/paul-ubuntu/workspace/apf/include/class.h
+	<windows.h>
+	<map>
+	"interface.h"
+	"classentry.h"
+
+1372294075 /home/paul-ubuntu/workspace/apf/include/interface.h
+	<string>
+	"classentry.h"
+	"class.h"
+
+1371525676 /home/paul-ubuntu/workspace/apf/include/classentry.h
+	<string>
+
+1371534062 /home/paul-ubuntu/workspace/apf/include/oscore.h
+	<time.h>
+	<windows.h>
+	<inttypes.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<unistd.h>
+	<errno.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<pthread.h>
+	<semaphore.h>
+	<inttypes.h>
+	<fcntl.h>
+
+1372301226 source:/home/paul-ubuntu/workspace/apf/src/interface.cpp
+	"interface.h"
+	"class.h"
+	"module.h"
+
+1371534072 source:/home/paul-ubuntu/workspace/apf/src/oscore.cpp
+	"oscore.h"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<mach/clock.h>
+	<mach/mach.h>
+
+1372294030 source:/home/paul-ubuntu/workspace/apf/src/plugin_manager.cpp
+	<stdio.h>
+	<dlfcn.h>
+	"plugin_manager.h"
+	"interface.h"
+	"classentry.h"
+	"class.h"
+	"module.h"
+
+1371539484 /home/paul-ubuntu/workspace/apf/include/plugin_manager.h
+	<string>
+	<map>
+	<windows.h>
+
+1372294086 /home/paul-ubuntu/workspace/apf/include/module.h
+	"classentry.h"
+	"object.h"
+	"singleobject.h"
+	"interface.h"
+
+1371533095 /home/paul-ubuntu/workspace/apf/include/object.h
+
+1371533214 /home/paul-ubuntu/workspace/apf/include/singleobject.h
+

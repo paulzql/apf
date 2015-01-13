@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: 模块的定义示例</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">模块的定义示例</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>开始模块的定义 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a" title="结束模块的定义 ">APF_END_MODULE()</a> </dd>
+<dd>
+<a class="el" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e" title="定义一个类与ID的映射 ">APF_CLASSMAP_ENTRY(clsid, cls)</a> </dd>
+<dd>
+<a class="el" href="module_8h.html#ab216650d8221f61d91f71a47e823af79" title="定义一个类与ID的映射（单例类) ">APF_CLASSMAP_ENTRY_SINGLETEN(clsid, cls)</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">module_version</td><td>模块的版本 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_support_version</td><td>最低支持的程序版本 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_support_version</td><td>最高支持的程序版本</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"> <span class="comment">// 开始定义模块(版本：1.0, 支持1.0以上的程序)</span></div>
+<div class="line">APF_BEGIN_MODULE(<a name="a0"></a><a class="code" href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">APF_VERSION</a>(1,0), <a class="code" href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">APF_VERSION</a>(1,0), <a name="a1"></a><a class="code" href="module_8h.html#ad6ae0c1941f6e09eef70825fe1e1068b">APF_MAX_VERSION</a>)</div>
+<div class="line">    <span class="comment">// 映射Example类</span></div>
+<div class="line">    <a name="a2"></a><a class="code" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e">APF_CLASSMAP_ENTRY</a>(&quot;class <span class="keywordtype">id</span>&quot;, Example)</div>
+<div class="line">    <span class="comment">// 映射Example类为单例模式</span></div>
+<div class="line">    <a name="a3"></a><a class="code" href="module_8h.html#ab216650d8221f61d91f71a47e823af79">APF_CLASSMAP_ENTRY_SINGLETEN</a>(&quot;single <span class="keywordtype">id</span>&quot;, SingleExample)</div>
+<div class="line"><a name="a4"></a><a class="code" href="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a">APF_END_MODULE</a>()</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

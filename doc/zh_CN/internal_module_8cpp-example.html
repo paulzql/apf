@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: internal_module.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">internal_module.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<p>开始内部模块的定义 </p><dl class="section see"><dt>参见</dt><dd><a class="el" href="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303" title="结束内部模块的定义 ">APF_END_INTERNAL_MODULE()</a> </dd>
+<dd>
+<a class="el" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e" title="定义一个类与ID的映射 ">APF_CLASSMAP_ENTRY(clsid, cls)</a> </dd>
+<dd>
+<a class="el" href="module_8h.html#ab216650d8221f61d91f71a47e823af79" title="定义一个类与ID的映射（单例类) ">APF_CLASSMAP_ENTRY_SINGLETEN(clsid, cls)</a></dd></dl>
+<p>内部模块的使用示例</p>
+<div class="fragment"><div class="line"></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;stdlib.h&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#include &quot;../include/interface.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;../include/signal.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;../include/module.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;../include/plugin_manager.h&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;../include/class.h&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><span class="preprocessor">#pragma comment(lib, &quot;../lib/apf-d.lib&quot;)</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span>std;</div>
+<div class="line"><span class="comment">// 定义接口</span></div>
+<div class="line"><span class="keyword">class </span>IExample {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <a name="a0"></a><a class="code" href="interface_8h.html#acbc4d603617d53b2a0afe4a3b7f7527d">APF_DECLARE_INTERFACE</a>(IExample)</div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SayHello() = 0;</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 实现类</span></div>
+<div class="line"><span class="keyword">class </span>Example : <span class="keyword">public</span> IExample{</div>
+<div class="line"><a name="a1"></a><a class="code" href="interface_8h.html#a775df2b8796c7afc6fdac1393ae928f5">APF_BEGIN_CLASS</a>()</div>
+<div class="line"><a name="a2"></a><a class="code" href="interface_8h.html#a52cb242e7fddcd3d183e089b7745221f">APF_INTERFACE_ENTRY</a>(IExample)</div>
+<div class="line"><a name="a3"></a><a class="code" href="interface_8h.html#a3de2b029f089c00fdba5406b2d0f0fdc">APF_END_CLASS</a>()</div>
+<div class="line">public:</div>
+<div class="line">    <span class="keywordtype">void</span> SayHello(){printf(<span class="stringliteral">&quot;hello\n&quot;</span>);}</div>
+<div class="line">};</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 定义ID</span></div>
+<div class="line"><a name="a4"></a><a class="code" href="interface_8h.html#a31d0da59402735416dfa715b94f479ea">APF_DECLARE_CLASSID</a>(CLSID_Example, <span class="stringliteral">&quot;Example&quot;</span>)</div>
+<div class="line"></div>
+<div class="line"><span class="comment">// 定义实现类与ID的映射</span></div>
+<div class="line">APF_BEGIN_INTERNAL_MODULE()</div>
+<div class="line"><a name="a5"></a><a class="code" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e">APF_CLASSMAP_ENTRY</a>(CLSID_Example, Example)</div>
+<div class="line"><a name="a6"></a><a class="code" href="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303">APF_END_INTERNAL_MODULE</a>()</div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a name="a7"></a><a class="code" href="classapf_1_1PluginManager.html#adfeaed7b46e513f7ce8c9b39b4decf9a">apf::PluginManager::instance</a>()-&gt;<a name="a8"></a><a class="code" href="classapf_1_1PluginManager.html#ac490b278ccf3ad16464013b8dedb2f45">SetVersion</a>(1, 0);</div>
+<div class="line">    <span class="comment">// 加载内部模块</span></div>
+<div class="line">    APFLoadInternalModules();</div>
+<div class="line">    </div>
+<div class="line">    Interface&lt;IExample&gt; example(CLSID_Example);</div>
+<div class="line">    <span class="keywordflow">if</span> (example) {</div>
+<div class="line">        example-&gt;SayHello();</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        printf(<span class="stringliteral">&quot;instance IExample failed\n&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"></div>
+</div><!-- fragment --> </div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

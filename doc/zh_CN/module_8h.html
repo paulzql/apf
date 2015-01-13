@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/module.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">module.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>模块(插件)相关的宏定义文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="classentry_8h_source.html">classentry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="singleobject_8h_source.html">singleobject.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interface_8h_source.html">interface.h</a>&quot;</code><br />
+</div>
+<p><a href="module_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1Module.html">apf::Module</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">模块类  <a href="classapf_1_1Module.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a84263d3d466e1d866cf8f79d12cd7c25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84263d3d466e1d866cf8f79d12cd7c25"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>APF_API</b>&#160;&#160;&#160;extern &quot;C&quot;</td></tr>
+<tr class="separator:a84263d3d466e1d866cf8f79d12cd7c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7f86179667d4aa6391a0c5dedc278e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7b7f86179667d4aa6391a0c5dedc278e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">APF_GET_MODULE_INFO_NAME</a>&#160;&#160;&#160;&quot;APFGetModuleInfo&quot;</td></tr>
+<tr class="memdesc:a7b7f86179667d4aa6391a0c5dedc278e"><td class="mdescLeft">&#160;</td><td class="mdescRight">模块导出函数名称 <br /></td></tr>
+<tr class="separator:a7b7f86179667d4aa6391a0c5dedc278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af969d26915c172c70789631abb946dea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af969d26915c172c70789631abb946dea"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>APF_SET_OBJECT_CREATOR_NAME</b>&#160;&#160;&#160;&quot;APFSetObjectCreator&quot;</td></tr>
+<tr class="separator:af969d26915c172c70789631abb946dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4cde1a90d1825bcd822b806e19c1e37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">APF_VERSION</a>(major, sub)&#160;&#160;&#160;(((unsigned long)major&lt;&lt;16) | sub)</td></tr>
+<tr class="memdesc:ad4cde1a90d1825bcd822b806e19c1e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换模块版本号  <a href="#ad4cde1a90d1825bcd822b806e19c1e37">更多...</a><br /></td></tr>
+<tr class="separator:ad4cde1a90d1825bcd822b806e19c1e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6ae0c1941f6e09eef70825fe1e1068b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6ae0c1941f6e09eef70825fe1e1068b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#ad6ae0c1941f6e09eef70825fe1e1068b">APF_MAX_VERSION</a>&#160;&#160;&#160;0x0FFFFFFF</td></tr>
+<tr class="memdesc:ad6ae0c1941f6e09eef70825fe1e1068b"><td class="mdescLeft">&#160;</td><td class="mdescRight">最大模块版本号 <br /></td></tr>
+<tr class="separator:ad6ae0c1941f6e09eef70825fe1e1068b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad05161b065f301502c69142be60a6116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>APF_BEGIN_MODULE</b>(module_version, min_support_version, max_support_version)</td></tr>
+<tr class="separator:ad05161b065f301502c69142be60a6116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb8118520cfbc0d0009846b3075e20a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a">APF_END_MODULE</a>()</td></tr>
+<tr class="memdesc:a6fb8118520cfbc0d0009846b3075e20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束模块的定义  <a href="#a6fb8118520cfbc0d0009846b3075e20a">更多...</a><br /></td></tr>
+<tr class="separator:a6fb8118520cfbc0d0009846b3075e20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9799e3053403210dad962dba7bdd9b7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>APF_BEGIN_INTERNAL_MODULE</b>()</td></tr>
+<tr class="separator:a9799e3053403210dad962dba7bdd9b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c58f87ad0eb10f25ec7e930bdd33303"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303">APF_END_INTERNAL_MODULE</a>()</td></tr>
+<tr class="memdesc:a6c58f87ad0eb10f25ec7e930bdd33303"><td class="mdescLeft">&#160;</td><td class="mdescRight">结束内部模块的定义  <a href="#a6c58f87ad0eb10f25ec7e930bdd33303">更多...</a><br /></td></tr>
+<tr class="separator:a6c58f87ad0eb10f25ec7e930bdd33303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b6a7a09214af6c910e64ea66b4d2b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30b6a7a09214af6c910e64ea66b4d2b7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>APFLoadInternalModules</b>&#160;&#160;&#160;APFLoadInternalModules</td></tr>
+<tr class="separator:a30b6a7a09214af6c910e64ea66b4d2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5d1e882418c45f0147b88b9192678e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e">APF_CLASSMAP_ENTRY</a>(<a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, cls)</td></tr>
+<tr class="memdesc:abf5d1e882418c45f0147b88b9192678e"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义一个类与ID的映射  <a href="#abf5d1e882418c45f0147b88b9192678e">更多...</a><br /></td></tr>
+<tr class="separator:abf5d1e882418c45f0147b88b9192678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab216650d8221f61d91f71a47e823af79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module_8h.html#ab216650d8221f61d91f71a47e823af79">APF_CLASSMAP_ENTRY_SINGLETEN</a>(<a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, cls)</td></tr>
+<tr class="memdesc:ab216650d8221f61d91f71a47e823af79"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义一个类与ID的映射（单例类)  <a href="#ab216650d8221f61d91f71a47e823af79">更多...</a><br /></td></tr>
+<tr class="separator:ab216650d8221f61d91f71a47e823af79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a5b213b7d3511c94a3210896b24704b29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b213b7d3511c94a3210896b24704b29"></a>
+typedef unsigned long(*&#160;</td><td class="memItemRight" valign="bottom"><b>apf::APF_GET_MODULE_INFO</b> )(unsigned long, <a class="el" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a> **)</td></tr>
+<tr class="separator:a5b213b7d3511c94a3210896b24704b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e66b308cc392b619d727ab9478836c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e66b308cc392b619d727ab9478836c4"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>apf::APF_SET_OBJECT_CREATOR</b> )(apf::APFCreateObjectFunc)</td></tr>
+<tr class="separator:a9e66b308cc392b619d727ab9478836c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:ad06475affa32ee72daf3cb2afaa8fb5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><b>apf::APFLoadInternalModules</b> ()</td></tr>
+<tr class="memdesc:ad06475affa32ee72daf3cb2afaa8fb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">加载内部所有模块  <a href="#ad06475affa32ee72daf3cb2afaa8fb5b">更多...</a><br /></td></tr>
+<tr class="separator:ad06475affa32ee72daf3cb2afaa8fb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>模块(插件)相关的宏定义文件 </p>
+<hr/>
+<p>Copyright (C) 2013 - 2013, Paul Zhou, <a href="#" onclick="location.href='mai'+'lto:'+'qia'+'nl'+'ong'+'.z'+'hou'+'@g'+'mai'+'l.'+'com'; return false;">qianl<span style="display: none;">.nosp@m.</span>ong.<span style="display: none;">.nosp@m.</span>zhou@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a>.</p>
+<p>This software is licensed as described in the file COPYING, which you should have received as part of this distribution.</p>
+<p>You may opt to use, copy, modify, merge, publish, distribute and/or sell copies of the Software, and permit persons to whom the Software is furnished to do so, under the terms of the COPYING file.</p>
+<p>This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. </p>
+
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a9799e3053403210dad962dba7bdd9b7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_BEGIN_INTERNAL_MODULE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><span class="keywordtype">int</span> APFLoadInternalModules() {\</div>
+<div class="line">    static <a class="code" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a> classes[] = {\</div>
+<div class="ttc" id="classapf_1_1ClassEntry_html"><div class="ttname"><a href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></div><div class="ttdoc">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00051">classentry.h:51</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00126">126</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad05161b065f301502c69142be60a6116"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_BEGIN_MODULE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">module_version, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min_support_version, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max_support_version&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line">APF_API <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> APFGetModuleInfo(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> app_version, <a class="code" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a>** module_classes) {\</div>
+<div class="line">    const <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> version = module_version;\</div>
+<div class="line">    const <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> min_support = min_support_version;\</div>
+<div class="line">    const <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> max_support = max_support_version;\</div>
+<div class="line">    static <a class="code" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a> classes[] = {\</div>
+<div class="ttc" id="classapf_1_1ClassEntry_html"><div class="ttname"><a href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></div><div class="ttdoc">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00051">classentry.h:51</a></div></div>
+</div><!-- fragment -->
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00078">78</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf5d1e882418c45f0147b88b9192678e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_CLASSMAP_ENTRY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cls&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">apf::ClassEntry</a>(<span class="stringliteral">&quot;Object&lt;&quot;</span> #cls <span class="stringliteral">&quot;&gt;&quot;</span>, <a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>,  \</div>
+<div class="line">        reinterpret_cast&lt;ObjectCreatorFunc&gt;(&amp;<a class="code" href="classapf_1_1Object.html">apf::Object&lt;cls&gt;::CreateObject</a>), \</div>
+<div class="line">        reinterpret_cast&lt;ObjectDestroyerFunc&gt;(&amp;<a class="code" href="classapf_1_1Object.html">apf::Object&lt;cls&gt;::DestroyObject</a>),  \</div>
+<div class="line">        reinterpret_cast&lt;QueryInterfaceFunc&gt;(&amp;<a class="code" href="classapf_1_1Object.html">apf::Object&lt;cls&gt;::QueryInterface</a>)),</div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="classapf_1_1Object_html"><div class="ttname"><a href="classapf_1_1Object.html">apf::Object</a></div><div class="ttdoc">类基本操作封装 </div><div class="ttdef"><b>Definition:</b> <a href="object_8h_source.html#l00030">object.h:30</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+<p>定义一个类与ID的映射 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">clsid</td><td>类ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cls</td><td>类名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="internal_module_8cpp-example.html#a5">internal_module.cpp</a>, <a class="el" href="_xE5_x86_x85_xE9_x83_xA8_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a0">内部模块的定义示例</a> , 以及 <a class="el" href="_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a2">模块的定义示例</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00159">159</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab216650d8221f61d91f71a47e823af79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_CLASSMAP_ENTRY_SINGLETEN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cls&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">apf::ClassEntry</a>(<span class="stringliteral">&quot;SingleObject&lt;&quot;</span> #cls <span class="stringliteral">&quot;&gt;&quot;</span>, <a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>,  \</div>
+<div class="line">        reinterpret_cast&lt;ObjectCreatorFunc&gt;(&amp;<a class="code" href="classapf_1_1SingleObject.html">apf::SingleObject&lt;cls&gt;::CreateObject</a>),    \</div>
+<div class="line">        reinterpret_cast&lt;ObjectDestroyerFunc&gt;(&amp;<a class="code" href="classapf_1_1SingleObject.html">apf::SingleObject&lt;cls&gt;::DestroyObject</a>), \</div>
+<div class="line">        reinterpret_cast&lt;QueryInterfaceFunc&gt;(&amp;<a class="code" href="classapf_1_1SingleObject.html">apf::SingleObject&lt;cls&gt;::QueryInterface</a>)),</div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+<div class="ttc" id="classapf_1_1SingleObject_html"><div class="ttname"><a href="classapf_1_1SingleObject.html">apf::SingleObject</a></div><div class="ttdoc">单例类基本操作封装 </div><div class="ttdef"><b>Definition:</b> <a href="singleobject_8h_source.html#l00030">singleobject.h:30</a></div></div>
+</div><!-- fragment -->
+<p>定义一个类与ID的映射（单例类) </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">clsid</td><td>类ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cls</td><td>类名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="_xE5_x86_x85_xE9_x83_xA8_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a1">内部模块的定义示例</a> , 以及 <a class="el" href="_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a3">模块的定义示例</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00171">171</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c58f87ad0eb10f25ec7e930bdd33303"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_END_INTERNAL_MODULE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">apf::ClassEntry</a>() \</div>
+<div class="line">    };\</div>
+<div class="line">    int register_size = 0;\</div>
+<div class="line">    int class_len = <span class="keyword">sizeof</span>(classes) / <span class="keyword">sizeof</span>(<a class="code" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a>) - 1 ;\</div>
+<div class="line">    for (<span class="keywordtype">int</span> i = 0; i &lt; class_len; i++) { \</div>
+<div class="line">        if (!<a class="code" href="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c">apf::Class::RegisterClass</a>(classes[i])) { \</div>
+<div class="line">            APF_DEBUG(<span class="stringliteral">&quot;Register internal class failed [classid:%s,name:%s]\n&quot;</span>, classes[i].<a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>.c_str(), classes[i].class_name);\</div>
+<div class="line">            continue;\</div>
+<div class="line">        }\</div>
+<div class="line">        register_size++;\</div>
+<div class="line">    }\</div>
+<div class="line">    return register_size;\</div>
+<div class="line">}\</div>
+<div class="ttc" id="classapf_1_1Class_html_a8603f7280a02bee082705520d7cb8d7c"><div class="ttname"><a href="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c">apf::Class::RegisterClass</a></div><div class="ttdeci">static bool RegisterClass(const ClassEntry &amp;class_entry, bool replace=true)</div><div class="ttdoc">注册类信息 </div><div class="ttdef"><b>Definition:</b> <a href="class_8cpp_source.html#l00029">class.cpp:29</a></div></div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="classapf_1_1ClassEntry_html"><div class="ttname"><a href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></div><div class="ttdoc">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00051">classentry.h:51</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+<p>结束内部模块的定义 </p>
+<dl class="section see"><dt>参见</dt><dd>APF_BEGIN_INTERNAL_MODULE() </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="internal_module_8cpp-example.html#a6">internal_module.cpp</a> , 以及 <a class="el" href="_xE5_x86_x85_xE9_x83_xA8_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a2">内部模块的定义示例</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00135">135</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fb8118520cfbc0d0009846b3075e20a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_END_MODULE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>值:</b><div class="fragment"><div class="line"><a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">apf::ClassEntry</a>() \</div>
+<div class="line">    };\</div>
+<div class="line">    *module_classes = classes;\</div>
+<div class="line">    return (app_version&gt;=min_support &amp;&amp; app_version &lt;= max_support) ? version : 0;\</div>
+<div class="line">}\</div>
+<div class="line">APF_API <span class="keywordtype">void</span> APFSetObjectCreator(apf::APFCreateObjectFunc objcreator) {<a class="code" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">\</a></div>
+<div class="line"><a class="code" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">    apf::Module::Instance</a>()-&gt;<a class="code" href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">object_creator</a> = objcreator;\</div>
+<div class="line">}\</div>
+<div class="ttc" id="classapf_1_1Module_html_a425df0bd29e3b4ff49b82252e5e93a9b"><div class="ttname"><a href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">apf::Module::object_creator</a></div><div class="ttdeci">apf::APFCreateObjectFunc object_creator</div><div class="ttdoc">对象创建函数 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00194">module.h:194</a></div></div>
+<div class="ttc" id="classapf_1_1Module_html_a8690f3b39a552d8fb1d2b962509d436d"><div class="ttname"><a href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">apf::Module::Instance</a></div><div class="ttdeci">static Module * Instance()</div><div class="ttdoc">获取单实例 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00187">module.h:187</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+<p>结束模块的定义 </p>
+<dl class="section see"><dt>参见</dt><dd>APF_BEGIN_MODULE(module_version, min_support_version, max_support_version) </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a4">模块的定义示例</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00090">90</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4cde1a90d1825bcd822b806e19c1e37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APF_VERSION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">major, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sub&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((unsigned long)major&lt;&lt;16) | sub)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>转换模块版本号 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">major</td><td>主版本号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub</td><td>次版本号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>模块版本号 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="_xE6_xA8_xA1_xE5_x9D_x97_xE7_x9A_x84_xE5_xAE_x9A_xE4_xB9_x89_xE7_xA4_xBA_xE4_xBE_x8B-example.html#a0">模块的定义示例</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="module_8h_source.html">module.h</a> 第 <a class="el" href="module_8h_source.html#l00049">49</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

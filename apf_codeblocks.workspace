@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="projects/simpleplugin/simpleplugin.cbp" />
+		<Project filename="projects/apf/apf.cbp" />
+		<Project filename="projects/simpletest/simpletest.cbp" />
+		<Project filename="modules/log/log.cbp" />
+		<Project filename="modules/logviewer/logviewer.cbp" />
+		<Project filename="modules/config/config.cbp" />
+		<Project filename="modules/sipstack/sipstack.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

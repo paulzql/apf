@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/signal.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">signal.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>信号槽相关  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;pthread.h&gt;</code><br />
+</div>
+<p><a href="signal_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1SlotBase.html">apf::SlotBase&lt; T1 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">槽的基类  <a href="classapf_1_1SlotBase.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1SlotImpl.html">apf::SlotImpl&lt; T, T1 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">槽的实现类  <a href="classapf_1_1SlotImpl.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1Slot.html">apf::Slot&lt; T1 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">槽封装  <a href="classapf_1_1Slot.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1Signal.html">apf::Signal&lt; T1 &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">信号类  <a href="classapf_1_1Signal.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aa2ad9c27624efec8c3fce893e35bbc81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2ad9c27624efec8c3fce893e35bbc81"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>slots</b>&#160;&#160;&#160;public</td></tr>
+<tr class="separator:aa2ad9c27624efec8c3fce893e35bbc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabbcb0bbcbcb6adcf20d63cc22f83649"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabbcb0bbcbcb6adcf20d63cc22f83649"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>signals</b>&#160;&#160;&#160;public</td></tr>
+<tr class="separator:aabbcb0bbcbcb6adcf20d63cc22f83649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60946f4aa74b84baa6664798dc97e08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#ae60946f4aa74b84baa6664798dc97e08">APFConnect</a>(sender, signal, receiver, method)&#160;&#160;&#160;( (sender)-&gt;signal.Bind(receiver, method) )</td></tr>
+<tr class="memdesc:ae60946f4aa74b84baa6664798dc97e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">连接信号与槽  <a href="#ae60946f4aa74b84baa6664798dc97e08">更多...</a><br /></td></tr>
+<tr class="separator:ae60946f4aa74b84baa6664798dc97e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9674dccf399cb4642d3619d8ab5b65e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#af9674dccf399cb4642d3619d8ab5b65e">APFDisconnect</a>(sender, signal, receiver, method)&#160;&#160;&#160;( (sender)-&gt;signal.UnBind(receiver, method) )</td></tr>
+<tr class="memdesc:af9674dccf399cb4642d3619d8ab5b65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开信号与槽的连接  <a href="#af9674dccf399cb4642d3619d8ab5b65e">更多...</a><br /></td></tr>
+<tr class="separator:af9674dccf399cb4642d3619d8ab5b65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化互斥锁  <a href="#a1a7c2242bb0cb95a71cd3e2e80a94894">更多...</a><br /></td></tr>
+<tr class="separator:a1a7c2242bb0cb95a71cd3e2e80a94894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b45fb41988604e9393eecc929208679"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a5b45fb41988604e9393eecc929208679"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放互斥锁  <a href="#a5b45fb41988604e9393eecc929208679">更多...</a><br /></td></tr>
+<tr class="separator:a5b45fb41988604e9393eecc929208679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01996d487162206af12d872678575ed4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a01996d487162206af12d872678575ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">互斥锁加锁  <a href="#a01996d487162206af12d872678575ed4">更多...</a><br /></td></tr>
+<tr class="separator:a01996d487162206af12d872678575ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518452e4babb18c91965909070db571c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a> (pthread_mutex_t *mutex)</td></tr>
+<tr class="memdesc:a518452e4babb18c91965909070db571c"><td class="mdescLeft">&#160;</td><td class="mdescRight">互斥锁解锁  <a href="#a518452e4babb18c91965909070db571c">更多...</a><br /></td></tr>
+<tr class="separator:a518452e4babb18c91965909070db571c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>信号槽相关 </p>
+<hr/>
+<p>Copyright (C) 2013 - 2013, Paul Zhou, <a href="#" onclick="location.href='mai'+'lto:'+'qia'+'nl'+'ong'+'.z'+'hou'+'@g'+'mai'+'l.'+'com'; return false;">qianl<span style="display: none;">.nosp@m.</span>ong.<span style="display: none;">.nosp@m.</span>zhou@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a>.</p>
+<p>This software is licensed as described in the file COPYING, which you should have received as part of this distribution.</p>
+<p>You may opt to use, copy, modify, merge, publish, distribute and/or sell copies of the Software, and permit persons to whom the Software is furnished to do so, under the terms of the COPYING file.</p>
+<p>This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. </p>
+
+<p>在文件 <a class="el" href="signal_8h_source.html">signal.h</a> 中定义.</p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="ae60946f4aa74b84baa6664798dc97e08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APFConnect</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sender, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">signal, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">receiver, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">method&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( (sender)-&gt;signal.Bind(receiver, method) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>连接信号与槽 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>信号发送者(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>信号(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">receiver</td><td>信号接收者(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">method</td><td>槽函数(指针) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="signal_8h.html#af9674dccf399cb4642d3619d8ab5b65e" title="断开信号与槽的连接 ">APFDisconnect( sender, signal, receiver, method)</a> </dd></dl>
+<dl class="section warning"><dt>警告</dt><dd>当receiver 销毁之前一定要先断开与之相关的信号连接 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="signal_8cpp-example.html#a1">signal.cpp</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="signal_8h_source.html">signal.h</a> 第 <a class="el" href="signal_8h_source.html#l00059">59</a> 行定义.</p>
+
+</div>
+</div>
+<a class="anchor" id="af9674dccf399cb4642d3619d8ab5b65e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define APFDisconnect</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sender, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">signal, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">receiver, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">method&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;( (sender)-&gt;signal.UnBind(receiver, method) )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>断开信号与槽的连接 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sender</td><td>信号发送者(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>信号(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">receiver</td><td>信号接收者(指针) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">method</td><td>槽函数(指针) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="signal_8h.html#ae60946f4aa74b84baa6664798dc97e08" title="连接信号与槽 ">APFConnect( sender, signal, receiver, method)</a> </dd></dl>
+
+<p>在文件 <a class="el" href="signal_8h_source.html">signal.h</a> 第 <a class="el" href="signal_8h_source.html#l00070">70</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a1a7c2242bb0cb95a71cd3e2e80a94894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int init_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>初始化互斥锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>初始化状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00103">103</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    pthread_mutexattr_t attr;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    memset(pmutex, 0, <span class="keyword">sizeof</span>(pthread_mutex_t));</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    memset(&amp;attr, 0, <span class="keyword">sizeof</span>(pthread_mutexattr_t));</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    pthread_mutexattr_init(&amp;attr);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// ÉèÖÃ recursive ÊôÐÔ</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    pthread_mutexattr_settype(&amp;attr,PTHREAD_MUTEX_RECURSIVE);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_init(pmutex, &amp;attr);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a01996d487162206af12d872678575ed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lock_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>互斥锁加锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00120">120</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                        {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_lock(pmutex);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5b45fb41988604e9393eecc929208679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int uninit_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>释放互斥锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00116">116</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                          {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_destroy(pmutex);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a518452e4babb18c91965909070db571c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unlock_mutex </td>
+          <td>(</td>
+          <td class="paramtype">pthread_mutex_t *&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>互斥锁解锁 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mutex</td><td>互斥锁指针 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>状态(0: 成功， 其它：失败) </dd></dl>
+
+<p>在文件 <a class="el" href="oscore_8cpp_source.html">oscore.cpp</a> 第 <a class="el" href="oscore_8cpp_source.html#l00124">124</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                          {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> pthread_mutex_unlock(pmutex);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

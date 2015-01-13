@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: apf::PluginManager类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><b>apf</b></li><li class="navelem"><a class="el" href="classapf_1_1PluginManager.html">PluginManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classapf_1_1PluginManager-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">apf::PluginManager类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>插件管理类(单例) 插件（模块）的加载、卸载等操作  
+ <a href="classapf_1_1PluginManager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="plugin__manager_8h_source.html">plugin_manager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structapf_1_1PluginManager_1_1ModuleItem.html">ModuleItem</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">模块基本信息类  <a href="structapf_1_1PluginManager_1_1ModuleItem.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ac490b278ccf3ad16464013b8dedb2f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#ac490b278ccf3ad16464013b8dedb2f45">SetVersion</a> (unsigned short major, unsigned short sub)</td></tr>
+<tr class="memdesc:ac490b278ccf3ad16464013b8dedb2f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置程序版本号 用于加载模块时确定其版本兼容性  <a href="#ac490b278ccf3ad16464013b8dedb2f45">更多...</a><br /></td></tr>
+<tr class="separator:ac490b278ccf3ad16464013b8dedb2f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7831efe0e65447843e5bf3a3971cedc1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a7831efe0e65447843e5bf3a3971cedc1">Load</a> (const char *path)</td></tr>
+<tr class="memdesc:a7831efe0e65447843e5bf3a3971cedc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">从指定模块文件中加载模块  <a href="#a7831efe0e65447843e5bf3a3971cedc1">更多...</a><br /></td></tr>
+<tr class="separator:a7831efe0e65447843e5bf3a3971cedc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d99f1010b3b552a35681e8c0b157603"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a3d99f1010b3b552a35681e8c0b157603">UnLoad</a> (const char *path)</td></tr>
+<tr class="memdesc:a3d99f1010b3b552a35681e8c0b157603"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载模块  <a href="#a3d99f1010b3b552a35681e8c0b157603">更多...</a><br /></td></tr>
+<tr class="separator:a3d99f1010b3b552a35681e8c0b157603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39216ce65ae035a0b1cfb5d071feb4c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39216ce65ae035a0b1cfb5d071feb4c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a39216ce65ae035a0b1cfb5d071feb4c3">UnLoadAll</a> ()</td></tr>
+<tr class="memdesc:a39216ce65ae035a0b1cfb5d071feb4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">卸载所有模块 <br /></td></tr>
+<tr class="separator:a39216ce65ae035a0b1cfb5d071feb4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d36f2c29c78d5ed08012be98ce18211"><td class="memItemLeft" align="right" valign="top">const std::map&lt; std::string, <br class="typebreak" />
+<a class="el" href="structapf_1_1PluginManager_1_1ModuleItem.html">ModuleItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a4d36f2c29c78d5ed08012be98ce18211">modules</a> () const </td></tr>
+<tr class="memdesc:a4d36f2c29c78d5ed08012be98ce18211"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取加载的所有模块信息  <a href="#a4d36f2c29c78d5ed08012be98ce18211">更多...</a><br /></td></tr>
+<tr class="separator:a4d36f2c29c78d5ed08012be98ce18211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:adfeaed7b46e513f7ce8c9b39b4decf9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classapf_1_1PluginManager.html">PluginManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#adfeaed7b46e513f7ce8c9b39b4decf9a">instance</a> ()</td></tr>
+<tr class="memdesc:adfeaed7b46e513f7ce8c9b39b4decf9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取插件管理类单实例  <a href="#adfeaed7b46e513f7ce8c9b39b4decf9a">更多...</a><br /></td></tr>
+<tr class="separator:adfeaed7b46e513f7ce8c9b39b4decf9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:abf4725e84313cac4630be312a56ade0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf4725e84313cac4630be312a56ade0c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#abf4725e84313cac4630be312a56ade0c">PluginManager</a> ()</td></tr>
+<tr class="memdesc:abf4725e84313cac4630be312a56ade0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数 <br /></td></tr>
+<tr class="separator:abf4725e84313cac4630be312a56ade0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d639911a092a56e00746f126afe1e96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d639911a092a56e00746f126afe1e96"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a3d639911a092a56e00746f126afe1e96">~PluginManager</a> ()</td></tr>
+<tr class="memdesc:a3d639911a092a56e00746f126afe1e96"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认析构函数 <br /></td></tr>
+<tr class="separator:a3d639911a092a56e00746f126afe1e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972e5c78122efe5a21abffb6a799f279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a972e5c78122efe5a21abffb6a799f279">RegisterClasses</a> (const <a class="el" href="classapf_1_1ClassEntry.html">ClassEntry</a> *classes)</td></tr>
+<tr class="memdesc:a972e5c78122efe5a21abffb6a799f279"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册类信息  <a href="#a972e5c78122efe5a21abffb6a799f279">更多...</a><br /></td></tr>
+<tr class="separator:a972e5c78122efe5a21abffb6a799f279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db18027dfc16842e56aa6100f48b7a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1PluginManager.html#a5db18027dfc16842e56aa6100f48b7a6">UnRegisterClasses</a> (const <a class="el" href="classapf_1_1ClassEntry.html">ClassEntry</a> *classes)</td></tr>
+<tr class="memdesc:a5db18027dfc16842e56aa6100f48b7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消注册类信息  <a href="#a5db18027dfc16842e56aa6100f48b7a6">更多...</a><br /></td></tr>
+<tr class="separator:a5db18027dfc16842e56aa6100f48b7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>插件管理类(单例) 插件（模块）的加载、卸载等操作 </p>
+
+<p>在文件 <a class="el" href="plugin__manager_8h_source.html">plugin_manager.h</a> 第 <a class="el" href="plugin__manager_8h_source.html#l00041">41</a> 行定义.</p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="adfeaed7b46e513f7ce8c9b39b4decf9a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classapf_1_1PluginManager.html">PluginManager</a> * apf::PluginManager::instance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取插件管理类单实例 </p>
+<dl class="section return"><dt>返回</dt><dd>插件管理类单实例 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="internal_module_8cpp-example.html#a7">internal_module.cpp</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00174">174</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                       {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">if</span> (NULL == instance_) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        instance_ = <span class="keyword">new</span> <a class="code" href="classapf_1_1PluginManager.html#abf4725e84313cac4630be312a56ade0c">PluginManager</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> instance_;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
+<div class="ttc" id="classapf_1_1PluginManager_html_abf4725e84313cac4630be312a56ade0c"><div class="ttname"><a href="classapf_1_1PluginManager.html#abf4725e84313cac4630be312a56ade0c">apf::PluginManager::PluginManager</a></div><div class="ttdeci">PluginManager()</div><div class="ttdoc">默认构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="plugin__manager_8cpp_source.html#l00039">plugin_manager.cpp:39</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a7831efe0e65447843e5bf3a3971cedc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool apf::PluginManager::Load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>从指定模块文件中加载模块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>加载是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00055">55</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                         {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    APF_DEBUG(<span class="stringliteral">&quot;loading module %s\n&quot;</span>, path);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (modules_.end() != modules_.find(path)) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;load module failed (alread loaded)\n&quot;</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    HMODULE hmodule = NULL;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a>* classes = NULL;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>  version = 0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    APF_GET_MODULE_INFO module_func = NULL;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    APF_SET_OBJECT_CREATOR set_object_creator_func = NULL;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    #ifdef WIN32</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    hmodule = ::LoadLibraryExA(path, NULL, LOAD_WITH_ALTERED_SEARCH_PATH);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (NULL != hmodule) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        module_func = (APF_GET_MODULE_INFO)GetProcAddress(hmodule, <a class="code" href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">APF_GET_MODULE_INFO_NAME</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        set_object_creator_func = (APF_SET_OBJECT_CREATOR)GetProcAddress(hmodule, APF_SET_OBJECT_CREATOR_NAME);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    hmodule = dlopen(path, RTLD_LAZY);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (NULL != hmodule) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        module_func = (APF_GET_MODULE_INFO)dlsym(hmodule, <a class="code" href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">APF_GET_MODULE_INFO_NAME</a>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        set_object_creator_func = (APF_SET_OBJECT_CREATOR)dlsym(hmodule, APF_SET_OBJECT_CREATOR_NAME);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> (NULL == hmodule) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;open module file failed\n&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (NULL == module_func) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;can&#39;t find module interface : %s\n&quot;</span>, <a class="code" href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">APF_GET_MODULE_INFO_NAME</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// get module info</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    version = module_func(<a class="code" href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">APF_VERSION</a>(major_version_, sub_version_), &amp;classes);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (0 == version) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;incompatible module\n&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (NULL == classes) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;no classes found\n&quot;</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (NULL != set_object_creator_func) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        set_object_creator_func(apf::APFCreateObject);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classapf_1_1PluginManager.html#a972e5c78122efe5a21abffb6a799f279">RegisterClasses</a>(classes);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ModuleItem item;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    item.hmodule = hmodule;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    item.classes = classes;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    item.version = version;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    modules_.insert(std::map&lt;std::string, ModuleItem&gt;::value_type(path, item));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    APF_DEBUG(<span class="stringliteral">&quot;loaded module %s\n&quot;</span>, path);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="ttc" id="module_8h_html_a7b7f86179667d4aa6391a0c5dedc278e"><div class="ttname"><a href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">APF_GET_MODULE_INFO_NAME</a></div><div class="ttdeci">#define APF_GET_MODULE_INFO_NAME</div><div class="ttdoc">模块导出函数名称 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00035">module.h:35</a></div></div>
+<div class="ttc" id="module_8h_html_ad4cde1a90d1825bcd822b806e19c1e37"><div class="ttname"><a href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">APF_VERSION</a></div><div class="ttdeci">#define APF_VERSION(major, sub)</div><div class="ttdoc">转换模块版本号 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00049">module.h:49</a></div></div>
+<div class="ttc" id="classapf_1_1PluginManager_html_a972e5c78122efe5a21abffb6a799f279"><div class="ttname"><a href="classapf_1_1PluginManager.html#a972e5c78122efe5a21abffb6a799f279">apf::PluginManager::RegisterClasses</a></div><div class="ttdeci">void RegisterClasses(const ClassEntry *classes)</div><div class="ttdoc">注册类信息 </div><div class="ttdef"><b>Definition:</b> <a href="plugin__manager_8cpp_source.html#l00149">plugin_manager.cpp:149</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a4d36f2c29c78d5ed08012be98ce18211"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::map&lt; std::string, <a class="el" href="structapf_1_1PluginManager_1_1ModuleItem.html">PluginManager::ModuleItem</a> &gt; apf::PluginManager::modules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取加载的所有模块信息 </p>
+<dl class="section return"><dt>返回</dt><dd>所有模块信息 </dd></dl>
+
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00170">170</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> modules_;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a972e5c78122efe5a21abffb6a799f279"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apf::PluginManager::RegisterClasses </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classapf_1_1ClassEntry.html">ClassEntry</a> *&#160;</td>
+          <td class="paramname"><em>classes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>注册类信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">classes</td><td>类信息数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00149">149</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                                             {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">const</span> <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a> empty_class;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">while</span> (classes &amp;&amp; (!classes-&gt;equals(empty_class))) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c">Class::RegisterClass</a>(*classes)) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="comment">// register class failed</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            APF_DEBUG(<span class="stringliteral">&quot;Register class failed [classid:%s,name:%s]\n&quot;</span>, classes-&gt;clsid.c_str(), classes-&gt;class_name);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            APF_DEBUG(<span class="stringliteral">&quot;Register class ok [classid:%s,name:%s]\n&quot;</span>, classes-&gt;clsid.c_str(), classes-&gt;class_name);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        classes++;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="ttc" id="classapf_1_1Class_html_a8603f7280a02bee082705520d7cb8d7c"><div class="ttname"><a href="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c">apf::Class::RegisterClass</a></div><div class="ttdeci">static bool RegisterClass(const ClassEntry &amp;class_entry, bool replace=true)</div><div class="ttdoc">注册类信息 </div><div class="ttdef"><b>Definition:</b> <a href="class_8cpp_source.html#l00029">class.cpp:29</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac490b278ccf3ad16464013b8dedb2f45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apf::PluginManager::SetVersion </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>major</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>sub</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>设置程序版本号 用于加载模块时确定其版本兼容性 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">major</td><td>主版本号 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sub</td><td>次版本号 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>在加载模块之前需先设置版本号 </dd></dl>
+<dl><dt><b>示例: </b></dt><dd><a class="el" href="internal_module_8cpp-example.html#a8">internal_module.cpp</a>.</dd>
+</dl>
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00050">50</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    major_version_ = major;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sub_version_ = sub;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3d99f1010b3b552a35681e8c0b157603"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool apf::PluginManager::UnLoad </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>卸载模块 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>模块文件路径 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>卸载是否成功 </dd></dl>
+
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00117">117</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                                           {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    std::map&lt;std::string, ModuleItem&gt;::iterator it = modules_.find(path);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (modules_.end() == modules_.find(path)) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        APF_DEBUG(<span class="stringliteral">&quot;no module found %s\n&quot;</span>, path);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classapf_1_1PluginManager.html#a5db18027dfc16842e56aa6100f48b7a6">UnRegisterClasses</a>(it-&gt;second.classes);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">    #ifdef WIN32</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    FreeLibrary(it-&gt;second.hmodule);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    dlclose(it-&gt;second.hmodule);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    modules_.erase(it);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="ttc" id="classapf_1_1PluginManager_html_a5db18027dfc16842e56aa6100f48b7a6"><div class="ttname"><a href="classapf_1_1PluginManager.html#a5db18027dfc16842e56aa6100f48b7a6">apf::PluginManager::UnRegisterClasses</a></div><div class="ttdeci">void UnRegisterClasses(const ClassEntry *classes)</div><div class="ttdoc">取消注册类信息 </div><div class="ttdef"><b>Definition:</b> <a href="plugin__manager_8cpp_source.html#l00162">plugin_manager.cpp:162</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5db18027dfc16842e56aa6100f48b7a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apf::PluginManager::UnRegisterClasses </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classapf_1_1ClassEntry.html">ClassEntry</a> *&#160;</td>
+          <td class="paramname"><em>classes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>取消注册类信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">classes</td><td>类信息数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a> 第 <a class="el" href="plugin__manager_8cpp_source.html#l00162">162</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                                               {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">const</span> <a class="code" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a> empty_class;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">while</span> (NULL != classes &amp;&amp; !(classes-&gt;equals(empty_class))) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <a class="code" href="classapf_1_1Class.html#a7c190d900e3e06814d2344ba0953ac7e">Class::UnRegisterClass</a>(*classes);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        classes++;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}</div>
+<div class="ttc" id="classapf_1_1Class_html_a7c190d900e3e06814d2344ba0953ac7e"><div class="ttname"><a href="classapf_1_1Class.html#a7c190d900e3e06814d2344ba0953ac7e">apf::Class::UnRegisterClass</a></div><div class="ttdeci">static void UnRegisterClass(const APFClassID &amp;class_id)</div><div class="ttdoc">注销类信息 </div><div class="ttdef"><b>Definition:</b> <a href="class_8cpp_source.html#l00059">class.cpp:59</a></div></div>
+<div class="ttc" id="classentry_8h_html_a361e731260e7d1931ddd7a3903edb971"><div class="ttname"><a href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a></div><div class="ttdeci">ClassEntry(const char *class_name, const APFClassID &amp;clsid, ObjectCreatorFunc create_object, ObjectDestroyerFunc destroy_object, QueryInterfaceFunc query_interface)</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00049">classentry.h:49</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="plugin__manager_8h_source.html">plugin_manager.h</a></li>
+<li>src/<a class="el" href="plugin__manager_8cpp_source.html">plugin_manager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/oscore.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">oscore.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="oscore_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*!**************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief 跨平台基本函数</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2013 - 2013, Paul Zhou, &lt;qianlong.zhou@gmail.com&gt;.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This software is licensed as described in the file COPYING, which</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * you should have received as part of this distribution.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * copies of the Software, and permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * furnished to do so, under the terms of the COPYING file.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This software is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTY OF ANY</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * KIND, either express or implied.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef OSCORE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define OSCORE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//#define BIT64     //64Î»</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(WIN32) || defined(WINCE)    //windows / wince</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;windows.h&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    #ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">        #ifdef WINCE</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//            #pragma comment(lib, &quot;WS2.LIB&quot;)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">        #else</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//            #pragma comment(lib, &quot;WS2_32.LIB&quot;)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">        #if (_MSC_VER &lt; 1300)</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;           <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>      uint32_t;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">        #else</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;           <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int32  uint32_t;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> __int64     uint64_t;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>       uint16_t;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">    #else</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        #include &lt;inttypes.h&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">    #endif</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//    #include &lt;WinSock2.h&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">    #define WIN_THREAD_FUNC LPTHREAD_START_ROUTINE</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    #define pthread_mutex_t     CRITICAL_SECTION</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">    #define sem_t               HANDLE</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    #define pthread_t           HANDLE</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">    #define socklen_t           int</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">    #define msleep  Sleep</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#else //linux / mac os / android / ios</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    #include &lt;sys/socket.h&gt;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">    #include &lt;netinet/in.h&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    #include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    #include &lt;errno.h&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    #include &lt;sys/stat.h&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    #include &lt;sys/time.h&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">    #include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">    #include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #include &lt;semaphore.h&gt;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">    #include &lt;inttypes.h&gt;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">    #include &lt;fcntl.h&gt;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> SOCKET;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">    #define INVALID_SOCKET  -1</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">    #define closesocket ::close</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    #define msleep(t)   usleep(t*1000)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">    #define INFINITE    0x0FFFFFFF</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="union__UEndianTest.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span><a class="code" href="union__UEndianTest.html">_UEndianTest</a>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">char</span> little_endian;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">long</span> value;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}<a class="code" href="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb">UEndianTest</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">extern</span> <a class="code" href="union__UEndianTest.html">UEndianTest</a> <a class="code" href="oscore_8h.html#a44740bf21b4b4bed7e3dfabb6a5a73f2">g_endianTest</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifndef LITTLE_ENDIAN</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#define LITTLE_ENDIAN   g_endianTest.little_endian</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="oscore_8h.html#a026447fbf22a6547b69813db8f94b85a">   90</a></span>&#160;<span class="preprocessor">#define NET32(n) g_endianTest.little_endian ? ((n&gt;&gt;24)|((n&gt;&gt;8)&amp;0xFF00)|((n&lt;&lt;8)&amp;0xFF0000)|(n&lt;&lt;24)):n</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="oscore_8h.html#a4246b1c736167fccb219f610611ec682">   94</a></span>&#160;<span class="preprocessor">#define NET16(n) g_endianTest.little_endian ? (((n&gt;&gt;8)&amp;0x00FF)|((n&lt;&lt;8)&amp;0xFF00)):n</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">  100</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span>* (*THREAD_FUNC)(<span class="keywordtype">void</span>*);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a2737ec3e56b4441035d1725df192c394">init_semaphore</a>(sem_t *sem, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initcount);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#afa7e85780db98165a8e9422aa83410ff">uninit_semaphore</a>(sem_t *sem);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a16e911fc3033caee489d1edb8b78e90e">wait_semaphore</a>(sem_t    *sem, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> waittime);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#ab6742f11e48962f399b10899ede70ec8">post_semaphore</a>(sem_t  *sem);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a4e13e12572b3ee9c271f7ecfb28c38b4">begin_thread</a>(pthread_t *pthread, <a class="code" href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">THREAD_FUNC</a> func, <span class="keywordtype">void</span> *arg);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a">wait_thread</a>(pthread_t *pthread);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keywordtype">int</span> <a class="code" href="oscore_8h.html#a9e924ff42cc9eaac6130f029a37d700b">random_int</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="oscore_8h.html#ab6b958915c8122e70a0ab1726c881d2e">clock_tick</a>();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keywordtype">void</span> <a class="code" href="oscore_8h.html#a58c8b2ad0ea491a6642e5e1cbd358c89">yield</a>();</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif // OSCORE_H</span></div>
+<div class="ttc" id="oscore_8h_html_a9e924ff42cc9eaac6130f029a37d700b"><div class="ttname"><a href="oscore_8h.html#a9e924ff42cc9eaac6130f029a37d700b">random_int</a></div><div class="ttdeci">int random_int()</div><div class="ttdoc">随机生成一个数字 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00232">oscore.cpp:232</a></div></div>
+<div class="ttc" id="oscore_8h_html_afa7e85780db98165a8e9422aa83410ff"><div class="ttname"><a href="oscore_8h.html#afa7e85780db98165a8e9422aa83410ff">uninit_semaphore</a></div><div class="ttdeci">int uninit_semaphore(sem_t *sem)</div><div class="ttdoc">释放信号量 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00170">oscore.cpp:170</a></div></div>
+<div class="ttc" id="oscore_8h_html_a81b8c9c1f4fc788cd1ab9e24bc4c958a"><div class="ttname"><a href="oscore_8h.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a">wait_thread</a></div><div class="ttdeci">int wait_thread(pthread_t *pthread)</div><div class="ttdoc">等待线程结束 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00132">oscore.cpp:132</a></div></div>
+<div class="ttc" id="oscore_8h_html_a01996d487162206af12d872678575ed4"><div class="ttname"><a href="oscore_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a></div><div class="ttdeci">int lock_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">互斥锁加锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00120">oscore.cpp:120</a></div></div>
+<div class="ttc" id="oscore_8h_html_aa1c8d3105020f3d09506b7be7736dffb"><div class="ttname"><a href="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb">UEndianTest</a></div><div class="ttdeci">union _UEndianTest UEndianTest</div><div class="ttdoc">大端/小端CPU测试类型 </div></div>
+<div class="ttc" id="oscore_8h_html_a44740bf21b4b4bed7e3dfabb6a5a73f2"><div class="ttname"><a href="oscore_8h.html#a44740bf21b4b4bed7e3dfabb6a5a73f2">g_endianTest</a></div><div class="ttdeci">UEndianTest g_endianTest</div><div class="ttdoc">大端/小端CPU测试对象 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00032">oscore.cpp:32</a></div></div>
+<div class="ttc" id="oscore_8h_html_ac7537c66fd3eceac0d9f1d9b610b14eb"><div class="ttname"><a href="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb">THREAD_FUNC</a></div><div class="ttdeci">void *(* THREAD_FUNC)(void *)</div><div class="ttdoc">线程函数类型 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8h_source.html#l00100">oscore.h:100</a></div></div>
+<div class="ttc" id="oscore_8h_html_a518452e4babb18c91965909070db571c"><div class="ttname"><a href="oscore_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a></div><div class="ttdeci">int unlock_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">互斥锁解锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00124">oscore.cpp:124</a></div></div>
+<div class="ttc" id="oscore_8h_html_a16e911fc3033caee489d1edb8b78e90e"><div class="ttname"><a href="oscore_8h.html#a16e911fc3033caee489d1edb8b78e90e">wait_semaphore</a></div><div class="ttdeci">int wait_semaphore(sem_t *sem, unsigned long waittime)</div><div class="ttdoc">等待信号 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00179">oscore.cpp:179</a></div></div>
+<div class="ttc" id="oscore_8h_html_a4e13e12572b3ee9c271f7ecfb28c38b4"><div class="ttname"><a href="oscore_8h.html#a4e13e12572b3ee9c271f7ecfb28c38b4">begin_thread</a></div><div class="ttdeci">int begin_thread(pthread_t *pthread, THREAD_FUNC func, void *arg)</div><div class="ttdoc">创建线程 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00128">oscore.cpp:128</a></div></div>
+<div class="ttc" id="oscore_8h_html_a2737ec3e56b4441035d1725df192c394"><div class="ttname"><a href="oscore_8h.html#a2737ec3e56b4441035d1725df192c394">init_semaphore</a></div><div class="ttdeci">int init_semaphore(sem_t *sem, unsigned int initcount)</div><div class="ttdoc">初始化信号量 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00156">oscore.cpp:156</a></div></div>
+<div class="ttc" id="oscore_8h_html_a5b45fb41988604e9393eecc929208679"><div class="ttname"><a href="oscore_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a></div><div class="ttdeci">int uninit_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">释放互斥锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00116">oscore.cpp:116</a></div></div>
+<div class="ttc" id="oscore_8h_html_a1a7c2242bb0cb95a71cd3e2e80a94894"><div class="ttname"><a href="oscore_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a></div><div class="ttdeci">int init_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">初始化互斥锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00103">oscore.cpp:103</a></div></div>
+<div class="ttc" id="oscore_8h_html_ab6742f11e48962f399b10899ede70ec8"><div class="ttname"><a href="oscore_8h.html#ab6742f11e48962f399b10899ede70ec8">post_semaphore</a></div><div class="ttdeci">int post_semaphore(sem_t *sem)</div><div class="ttdoc">增加信号 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00218">oscore.cpp:218</a></div></div>
+<div class="ttc" id="oscore_8h_html_a58c8b2ad0ea491a6642e5e1cbd358c89"><div class="ttname"><a href="oscore_8h.html#a58c8b2ad0ea491a6642e5e1cbd358c89">yield</a></div><div class="ttdeci">void yield()</div><div class="ttdoc">释放CPU使用权 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00226">oscore.cpp:226</a></div></div>
+<div class="ttc" id="oscore_8h_html_ab6b958915c8122e70a0ab1726c881d2e"><div class="ttname"><a href="oscore_8h.html#ab6b958915c8122e70a0ab1726c881d2e">clock_tick</a></div><div class="ttdeci">unsigned long clock_tick()</div><div class="ttdoc">获取CPU时间(毫秒) </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00137">oscore.cpp:137</a></div></div>
+<div class="ttc" id="union__UEndianTest_html"><div class="ttname"><a href="union__UEndianTest.html">_UEndianTest</a></div><div class="ttdoc">大端/小端CPU测试类型 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8h_source.html#l00073">oscore.h:73</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

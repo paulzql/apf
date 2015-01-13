@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/classentry.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a> &#124;
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle">
+<div class="title">classentry.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>类信息实体类头文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+</div>
+<p><a href="classentry_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等  <a href="classapf_1_1ClassEntry.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:a46f6756503d8121265e6fef379ea9f15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46f6756503d8121265e6fef379ea9f15"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&#160;&#160;&#160;std::string</td></tr>
+<tr class="memdesc:a46f6756503d8121265e6fef379ea9f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">类ID类型 <br /></td></tr>
+<tr class="separator:a46f6756503d8121265e6fef379ea9f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affaddf064ec3d20cc79d7217bf120cbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="affaddf064ec3d20cc79d7217bf120cbe"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#affaddf064ec3d20cc79d7217bf120cbe">APFInterfaceID</a>&#160;&#160;&#160;long</td></tr>
+<tr class="memdesc:affaddf064ec3d20cc79d7217bf120cbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">接口ID类型 <br /></td></tr>
+<tr class="separator:affaddf064ec3d20cc79d7217bf120cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:a2eb292cfdb85e4fb449e22a04fbbe3ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2eb292cfdb85e4fb449e22a04fbbe3ca"></a>
+typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectCreatorFunc</b> )()</td></tr>
+<tr class="separator:a2eb292cfdb85e4fb449e22a04fbbe3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e789ba0e956bbec16703e86ab5e64e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e789ba0e956bbec16703e86ab5e64e0"></a>
+typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectDestroyerFunc</b> )(void *)</td></tr>
+<tr class="separator:a2e789ba0e956bbec16703e86ab5e64e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f20bea511697c5c662943a9c6064de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90f20bea511697c5c662943a9c6064de"></a>
+typedef bool(*&#160;</td><td class="memItemRight" valign="bottom"><b>QueryInterfaceFunc</b> )(<a class="el" href="classentry_8h.html#affaddf064ec3d20cc79d7217bf120cbe">APFInterfaceID</a>)</td></tr>
+<tr class="separator:a90f20bea511697c5c662943a9c6064de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aa6f89d99309523d5011b6442a6e8c520"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6f89d99309523d5011b6442a6e8c520"></a>
+class <a class="el" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apf::__attribute__</b> ((aligned(8)))</td></tr>
+<tr class="separator:aa6f89d99309523d5011b6442a6e8c520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361e731260e7d1931ddd7a3903edb971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971">ClassEntry</a> (const char *<a class="el" href="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358">class_name</a>, const <a class="el" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a> &amp;<a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>, ObjectCreatorFunc <a class="el" href="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac">create_object</a>, ObjectDestroyerFunc <a class="el" href="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d">destroy_object</a>, QueryInterfaceFunc <a class="el" href="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d">query_interface</a>)</td></tr>
+<tr class="memdesc:a361e731260e7d1931ddd7a3903edb971"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数  <a href="#a361e731260e7d1931ddd7a3903edb971">更多...</a><br /></td></tr>
+<tr class="separator:a361e731260e7d1931ddd7a3903edb971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9738e04ffc4d7050e1fe4fb7d92bad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a0d9738e04ffc4d7050e1fe4fb7d92bad">ClassEntry</a> (const ClassEntry &amp;entry)</td></tr>
+<tr class="memdesc:a0d9738e04ffc4d7050e1fe4fb7d92bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">拷贝构造函数  <a href="#a0d9738e04ffc4d7050e1fe4fb7d92bad">更多...</a><br /></td></tr>
+<tr class="separator:a0d9738e04ffc4d7050e1fe4fb7d92bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382e245b199f1e903791bfc5e9b3746a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a382e245b199f1e903791bfc5e9b3746a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a382e245b199f1e903791bfc5e9b3746a">ClassEntry</a> ()</td></tr>
+<tr class="memdesc:a382e245b199f1e903791bfc5e9b3746a"><td class="mdescLeft">&#160;</td><td class="mdescRight">默认构造函数(空对象） <br /></td></tr>
+<tr class="separator:a382e245b199f1e903791bfc5e9b3746a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bcf662dd6bb83796bce22e00c7e6d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5bcf662dd6bb83796bce22e00c7e6d9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9">equals</a> (const <a class="el" href="classentry_8h.html#a382e245b199f1e903791bfc5e9b3746a">ClassEntry</a> &amp;entry) const </td></tr>
+<tr class="memdesc:ab5bcf662dd6bb83796bce22e00c7e6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断对象是否相等 <br /></td></tr>
+<tr class="separator:ab5bcf662dd6bb83796bce22e00c7e6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:aadfb05fafcbec39702e5cf077a705358"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadfb05fafcbec39702e5cf077a705358"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358">class_name</a></td></tr>
+<tr class="memdesc:aadfb05fafcbec39702e5cf077a705358"><td class="mdescLeft">&#160;</td><td class="mdescRight">实现类名 <br /></td></tr>
+<tr class="separator:aadfb05fafcbec39702e5cf077a705358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a375b94a52f815ab8b3b3236969eef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73a375b94a52f815ab8b3b3236969eef"></a>
+<a class="el" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></td></tr>
+<tr class="memdesc:a73a375b94a52f815ab8b3b3236969eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">类ID <br /></td></tr>
+<tr class="separator:a73a375b94a52f815ab8b3b3236969eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c76426d4bee707890ac143412df5ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7c76426d4bee707890ac143412df5ac"></a>
+ObjectCreatorFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac">create_object</a></td></tr>
+<tr class="memdesc:ac7c76426d4bee707890ac143412df5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建对象函数 <br /></td></tr>
+<tr class="separator:ac7c76426d4bee707890ac143412df5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb3fd80f3045657ccd43d993544797d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cb3fd80f3045657ccd43d993544797d"></a>
+ObjectDestroyerFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d">destroy_object</a></td></tr>
+<tr class="memdesc:a3cb3fd80f3045657ccd43d993544797d"><td class="mdescLeft">&#160;</td><td class="mdescRight">销毁对象函数 <br /></td></tr>
+<tr class="separator:a3cb3fd80f3045657ccd43d993544797d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac620c57239d0a1643f90d404c96eac8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac620c57239d0a1643f90d404c96eac8d"></a>
+QueryInterfaceFunc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d">query_interface</a></td></tr>
+<tr class="memdesc:ac620c57239d0a1643f90d404c96eac8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询接口函数 <br /></td></tr>
+<tr class="separator:ac620c57239d0a1643f90d404c96eac8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>类信息实体类头文件 </p>
+<hr/>
+<p>Copyright (C) 2013 - 2013, Paul Zhou, <a href="#" onclick="location.href='mai'+'lto:'+'qia'+'nl'+'ong'+'.z'+'hou'+'@g'+'mai'+'l.'+'com'; return false;">qianl<span style="display: none;">.nosp@m.</span>ong.<span style="display: none;">.nosp@m.</span>zhou@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a>.</p>
+<p>This software is licensed as described in the file COPYING, which you should have received as part of this distribution.</p>
+<p>You may opt to use, copy, modify, merge, publish, distribute and/or sell copies of the Software, and permit persons to whom the Software is furnished to do so, under the terms of the COPYING file.</p>
+<p>This software is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. </p>
+
+<p>在文件 <a class="el" href="classentry_8h_source.html">classentry.h</a> 中定义.</p>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a361e731260e7d1931ddd7a3903edb971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__::ClassEntry </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>class_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15">APFClassID</a> &amp;&#160;</td>
+          <td class="paramname"><em>clsid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ObjectCreatorFunc&#160;</td>
+          <td class="paramname"><em>create_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ObjectDestroyerFunc&#160;</td>
+          <td class="paramname"><em>destroy_object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QueryInterfaceFunc&#160;</td>
+          <td class="paramname"><em>query_interface</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">class_name</td><td>类名称 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">classid</td><td>类ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">create_object</td><td>创建对象函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">destroy_object</td><td>销毁对象函数 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">query_interface</td><td>查询接口函数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="classentry_8h_source.html">classentry.h</a> 第 <a class="el" href="classentry_8h_source.html#l00049">49</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                 {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0d9738e04ffc4d7050e1fe4fb7d92bad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__attribute__::ClassEntry </td>
+          <td>(</td>
+          <td class="paramtype">const ClassEntry &amp;&#160;</td>
+          <td class="paramname"><em>entry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>拷贝构造函数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">entry</td><td>拷贝对象 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在文件 <a class="el" href="classentry_8h_source.html">classentry.h</a> 第 <a class="el" href="classentry_8h_source.html#l00067">67</a> 行定义.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        : <a class="code" href="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358">class_name</a>(<a class="code" href="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358">class_name</a>), <a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>(<a class="code" href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        , <a class="code" href="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac">create_object</a>(<a class="code" href="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac">create_object</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        , <a class="code" href="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d">destroy_object</a>(<a class="code" href="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d">destroy_object</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        , <a class="code" href="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d">query_interface</a>(<a class="code" href="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d">query_interface</a>) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="ttc" id="classentry_8h_html_aadfb05fafcbec39702e5cf077a705358"><div class="ttname"><a href="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358">class_name</a></div><div class="ttdeci">const char * class_name</div><div class="ttdoc">实现类名 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00100">classentry.h:100</a></div></div>
+<div class="ttc" id="classentry_8h_html_ac620c57239d0a1643f90d404c96eac8d"><div class="ttname"><a href="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d">query_interface</a></div><div class="ttdeci">QueryInterfaceFunc query_interface</div><div class="ttdoc">查询接口函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00112">classentry.h:112</a></div></div>
+<div class="ttc" id="classentry_8h_html_ac7c76426d4bee707890ac143412df5ac"><div class="ttname"><a href="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac">create_object</a></div><div class="ttdeci">ObjectCreatorFunc create_object</div><div class="ttdoc">创建对象函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00106">classentry.h:106</a></div></div>
+<div class="ttc" id="classentry_8h_html_a73a375b94a52f815ab8b3b3236969eef"><div class="ttname"><a href="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef">clsid</a></div><div class="ttdeci">APFClassID clsid</div><div class="ttdoc">类ID </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00103">classentry.h:103</a></div></div>
+<div class="ttc" id="classentry_8h_html_a3cb3fd80f3045657ccd43d993544797d"><div class="ttname"><a href="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d">destroy_object</a></div><div class="ttdeci">ObjectDestroyerFunc destroy_object</div><div class="ttdoc">销毁对象函数 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00109">classentry.h:109</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

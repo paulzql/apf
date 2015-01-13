@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1370599838 source:/home/paul-ubuntu/workspace/apf/modules/log/main.cpp
+	"log.h"
+	"module.h"
+
+1370240342 source:/home/paul-ubuntu/workspace/apf/src/oscore.cpp
+	"oscore.h"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+	<mach/clock.h>
+	<mach/mach.h>
+
+1371534062 /home/paul-ubuntu/workspace/apf/include//oscore.h
+	<time.h>
+	<windows.h>
+	<inttypes.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<unistd.h>
+	<errno.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<pthread.h>
+	<semaphore.h>
+	<inttypes.h>
+	<fcntl.h>
+
+1372231980 /home/paul-ubuntu/workspace/apf/include//interface.h
+	<string>
+	"classentry.h"
+	"class.h"
+
+1371525676 /home/paul-ubuntu/workspace/apf/include//classentry.h
+	<string>
+
+1371525801 /home/paul-ubuntu/workspace/apf/include//class.h
+	<windows.h>
+	<map>
+	"interface.h"
+	"classentry.h"
+
+1370581022 /home/paul-ubuntu/workspace/apf/modules/log/include//log.h
+	<string>
+	"oscore.h"
+	"interface.h"
+	"ilog.h"
+
+1371439569 /home/paul-ubuntu/workspace/apf/modules/log//ilog.h
+
+1370598289 source:/home/paul-ubuntu/workspace/apf/modules/log/src/log.cpp
+	<stdio.h>
+	<string.h>
+	<stdarg.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<sys/socket.h>
+	"log.h"
+
+1372231691 /home/paul-ubuntu/workspace/apf/include//module.h
+	"classentry.h"
+	"object.h"
+	"singleobject.h"
+	"interface.h"
+
+1371533095 /home/paul-ubuntu/workspace/apf/include//object.h
+
+1371533214 /home/paul-ubuntu/workspace/apf/include//singleobject.h
+

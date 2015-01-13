@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/signal.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">signal.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="signal_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*!**************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief 信号槽相关</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2013 - 2013, Paul Zhou, &lt;qianlong.zhou@gmail.com&gt;.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This software is licensed as described in the file COPYING, which</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * you should have received as part of this distribution.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * copies of the Software, and permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * furnished to do so, under the terms of the COPYING file.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This software is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTY OF ANY</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * KIND, either express or implied.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef APFSIGNAL_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define APFSIGNAL_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// mutex functions, defined in oscore.cpp</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(WIN32)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef pthread_mutex_t</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define pthread_mutex_t     CRITICAL_SECTION</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;pthread.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keywordtype">int</span> <a class="code" href="signal_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">int</span> <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(pthread_mutex_t *mutex);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>apf {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// simple use apf signal and slot ///////////////////////////////////////</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#define slots public</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define signals public</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// connect between signal and slot</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="signal_8h.html#ae60946f4aa74b84baa6664798dc97e08">   59</a></span>&#160;<span class="preprocessor">#define APFConnect( sender, signal, receiver, method) ( (sender)-&gt;signal.Bind(receiver, method) )</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// disconnect between signal and slot</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="signal_8h.html#af9674dccf399cb4642d3619d8ab5b65e">   70</a></span>&#160;<span class="preprocessor">#define APFDisconnect( sender, signal, receiver, method) ( (sender)-&gt;signal.UnBind(receiver, method) )</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// base slot class with parameter</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T1&gt;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classapf_1_1SlotBase.html">   77</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1SlotBase.html">SlotBase</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// invoke slot function</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classapf_1_1SlotBase.html#aaca0d66f57bcfcf8c77a6522d30c1788">Exec</a>(T1 param1) = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classapf_1_1SlotBase.html#a12db8314ecec9c8873f0dfcbdb8deafd">   89</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classapf_1_1SlotBase.html#a12db8314ecec9c8873f0dfcbdb8deafd">~SlotBase</a>(){}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// slot implement with parameter</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keyword">class</span> T1&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classapf_1_1SlotImpl.html">   97</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1SlotImpl.html">SlotImpl</a> : <span class="keyword">public</span> <a class="code" href="classapf_1_1SlotBase.html">SlotBase</a>&lt;T1&gt; {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// constructor</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classapf_1_1SlotImpl.html#aa926ab8183e1e996441b9197c349af85">  105</a></span>&#160;    <a class="code" href="classapf_1_1SlotImpl.html#aa926ab8183e1e996441b9197c349af85">SlotImpl</a>(T* obj, <span class="keywordtype">void</span> (T::*func)(T1) ) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        obj_ = obj;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        func_ = func;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// invoke slot function</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classapf_1_1SlotImpl.html#a5f4be570eac646369a9e0ef93d0a37e1">  111</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1SlotImpl.html#a5f4be570eac646369a9e0ef93d0a37e1">Exec</a>( T1 param1) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        (obj_-&gt;*func_)(param1);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// slot object</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    T* obj_;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// slot function</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    void (T::*func_)(T1);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">// slot class with parameter</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T1&gt;</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html">  127</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1Slot.html">Slot</a> {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html#a6f61a70c878c5ad402d7a27036faa9b6">  135</a></span>&#160;    <a class="code" href="classapf_1_1Slot.html#a6f61a70c878c5ad402d7a27036faa9b6">Slot</a>(T* obj, <span class="keywordtype">void</span> (T::*func)(T1)) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        slot_base_ = <span class="keyword">new</span> <a class="code" href="classapf_1_1SlotImpl.html">SlotImpl&lt;T, T1&gt;</a>(<a class="code" href="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3">obj</a>, func);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        obj_ = <a class="code" href="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3">obj</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        func_ = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span>*<span class="keyword">&gt;</span>(&amp;func);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// copy constructor</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">// note: don&#39;t use the src after this function</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html#ab4d41fecd4ccc217ff67f361d2104e22">  146</a></span>&#160;    <a class="code" href="classapf_1_1Slot.html#ab4d41fecd4ccc217ff67f361d2104e22">Slot</a>(<a class="code" href="classapf_1_1Slot.html">Slot&lt;T1&gt;</a>&amp; src) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        slot_base_ = src.slot_base_;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        src.slot_base_ = NULL;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html#aae739ec2473f4ca3d8c708244106c8be">  154</a></span>&#160;    <a class="code" href="classapf_1_1Slot.html#aae739ec2473f4ca3d8c708244106c8be">~Slot</a>() {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> (NULL != slot_base_) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="keyword">delete</span> slot_base_;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html#a2a795f1f304ff9666c980a45808cdf5f">  166</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Slot.html#a2a795f1f304ff9666c980a45808cdf5f">equals</a>(<span class="keywordtype">void</span>* obj, <span class="keywordtype">void</span>* func) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> (obj_ == obj) &amp;&amp; (func_ == func);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3">  174</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3">obj</a>() {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">return</span> obj_;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordtype">void</span> Exec(T1 param1) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        slot_base_-&gt;Exec(param1);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    SlotBase&lt;T1&gt;* slot_base_;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">void</span>* obj_;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">void</span>* func_;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">// signal class with parameter</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T1&gt;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classapf_1_1Signal.html">  193</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1Signal.html">Signal</a> {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="classapf_1_1Signal.html">Signal</a>() {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    ~<a class="code" href="classapf_1_1Signal.html">Signal</a>() {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keyword">delete</span> slot_set_[i];</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <a class="code" href="signal_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// bind between signal and slot</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="classapf_1_1Signal.html#acc8bb316fed6c6f9f8cdc7a364d4f284">  216</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classapf_1_1Signal.html#acc8bb316fed6c6f9f8cdc7a364d4f284">Bind</a>(T* obj, <span class="keywordtype">void</span> (T::*func)(T1)) {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">bool</span> ret = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">if</span> (slot_set_[i]-&gt;<a class="code" href="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9">equals</a>(obj, reinterpret_cast&lt;void*&gt;(&amp;func))) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                ret = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        }</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">if</span> (ret) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            slot_set_.push_back(<span class="keyword">new</span> <a class="code" href="classapf_1_1Slot.html">Slot&lt;T1&gt;</a>(obj, func));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="comment">// unbind between signal and slot</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classapf_1_1Signal.html#ad175ebc60b424ecf2b2b2d0a3050777b">  241</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Signal.html#ad175ebc60b424ecf2b2b2d0a3050777b">UnBind</a>(T* obj, <span class="keywordtype">void</span> (T::*func)(T1)) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keywordflow">if</span> (slot_set_[i]-&gt;<a class="code" href="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9">equals</a>(obj, reinterpret_cast&lt;void*&gt;(&amp;func))) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                <span class="keyword">delete</span> slot_set_[i];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="comment">// move front</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="keywordflow">for</span> (i++; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                    slot_set_[i-1] = slot_set_[i];</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                slot_set_.resize(slot_set_.size()-1);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">// unbind between signal and slot</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classapf_1_1Signal.html#a464ed8d21403385da38d9f1eb003718a">  264</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Signal.html#a464ed8d21403385da38d9f1eb003718a">UnBind</a>(T* obj) {</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">if</span> (slot_set_[i]-&gt;obj() == (<span class="keywordtype">void</span>*)obj) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keyword">delete</span> slot_set_[i];</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="comment">// remove from slot_set_</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="keywordflow">for</span> (i++; i &lt; slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                    slot_set_[i-1] = slot_set_[i];</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                slot_set_.resize(slot_set_.size()-1);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="classapf_1_1Signal.html#a8aa08bc762212854b497352f2d3ba0df">  284</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classapf_1_1Signal.html#a8aa08bc762212854b497352f2d3ba0df">operator()</a>(T1 param1) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;(int)slot_set_.size(); i++) {</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            slot_set_[i]-&gt;Exec(param1);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a>(&amp;mutex_);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="comment">// connected slots</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    std::vector&lt; Slot&lt;T1&gt;* &gt; slot_set_;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="comment">// thread safe mutex</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    pthread_mutex_t mutex_;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;};</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;} <span class="comment">// namespace</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#endif // APFSIGNAL_H</span></div>
+<div class="ttc" id="classapf_1_1Signal_html_a8aa08bc762212854b497352f2d3ba0df"><div class="ttname"><a href="classapf_1_1Signal.html#a8aa08bc762212854b497352f2d3ba0df">apf::Signal::operator()</a></div><div class="ttdeci">void operator()(T1 param1)</div><div class="ttdoc">重载括号操作符(执行绑定槽函数) </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00284">signal.h:284</a></div></div>
+<div class="ttc" id="classapf_1_1SlotImpl_html"><div class="ttname"><a href="classapf_1_1SlotImpl.html">apf::SlotImpl</a></div><div class="ttdoc">槽的实现类 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00097">signal.h:97</a></div></div>
+<div class="ttc" id="classentry_8h_html_ab5bcf662dd6bb83796bce22e00c7e6d9"><div class="ttname"><a href="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9">equals</a></div><div class="ttdeci">bool equals(const ClassEntry &amp;entry) const </div><div class="ttdoc">判断对象是否相等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00090">classentry.h:90</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html_a6f61a70c878c5ad402d7a27036faa9b6"><div class="ttname"><a href="classapf_1_1Slot.html#a6f61a70c878c5ad402d7a27036faa9b6">apf::Slot::Slot</a></div><div class="ttdeci">Slot(T *obj, void(T::*func)(T1))</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00135">signal.h:135</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html_aae739ec2473f4ca3d8c708244106c8be"><div class="ttname"><a href="classapf_1_1Slot.html#aae739ec2473f4ca3d8c708244106c8be">apf::Slot::~Slot</a></div><div class="ttdeci">~Slot()</div><div class="ttdoc">析构函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00154">signal.h:154</a></div></div>
+<div class="ttc" id="classapf_1_1Signal_html"><div class="ttname"><a href="classapf_1_1Signal.html">apf::Signal</a></div><div class="ttdoc">信号类 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00193">signal.h:193</a></div></div>
+<div class="ttc" id="classapf_1_1SlotImpl_html_aa926ab8183e1e996441b9197c349af85"><div class="ttname"><a href="classapf_1_1SlotImpl.html#aa926ab8183e1e996441b9197c349af85">apf::SlotImpl::SlotImpl</a></div><div class="ttdeci">SlotImpl(T *obj, void(T::*func)(T1))</div><div class="ttdoc">构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00105">signal.h:105</a></div></div>
+<div class="ttc" id="classapf_1_1Signal_html_ad175ebc60b424ecf2b2b2d0a3050777b"><div class="ttname"><a href="classapf_1_1Signal.html#ad175ebc60b424ecf2b2b2d0a3050777b">apf::Signal::UnBind</a></div><div class="ttdeci">void UnBind(T *obj, void(T::*func)(T1))</div><div class="ttdoc">取消信号与槽的绑定 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00241">signal.h:241</a></div></div>
+<div class="ttc" id="classapf_1_1SlotImpl_html_a5f4be570eac646369a9e0ef93d0a37e1"><div class="ttname"><a href="classapf_1_1SlotImpl.html#a5f4be570eac646369a9e0ef93d0a37e1">apf::SlotImpl::Exec</a></div><div class="ttdeci">void Exec(T1 param1)</div><div class="ttdoc">执行槽函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00111">signal.h:111</a></div></div>
+<div class="ttc" id="signal_8h_html_a1a7c2242bb0cb95a71cd3e2e80a94894"><div class="ttname"><a href="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894">init_mutex</a></div><div class="ttdeci">int init_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">初始化互斥锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00103">oscore.cpp:103</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html"><div class="ttname"><a href="classapf_1_1Slot.html">apf::Slot</a></div><div class="ttdoc">槽封装 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00127">signal.h:127</a></div></div>
+<div class="ttc" id="signal_8h_html_a5b45fb41988604e9393eecc929208679"><div class="ttname"><a href="signal_8h.html#a5b45fb41988604e9393eecc929208679">uninit_mutex</a></div><div class="ttdeci">int uninit_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">释放互斥锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00116">oscore.cpp:116</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html_ab7eff02353ac522e23466b3b6756ecb3"><div class="ttname"><a href="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3">apf::Slot::obj</a></div><div class="ttdeci">void * obj()</div><div class="ttdoc">获取槽所属对象 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00174">signal.h:174</a></div></div>
+<div class="ttc" id="classapf_1_1Signal_html_acc8bb316fed6c6f9f8cdc7a364d4f284"><div class="ttname"><a href="classapf_1_1Signal.html#acc8bb316fed6c6f9f8cdc7a364d4f284">apf::Signal::Bind</a></div><div class="ttdeci">bool Bind(T *obj, void(T::*func)(T1))</div><div class="ttdoc">绑定信号与槽 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00216">signal.h:216</a></div></div>
+<div class="ttc" id="classapf_1_1SlotBase_html_aaca0d66f57bcfcf8c77a6522d30c1788"><div class="ttname"><a href="classapf_1_1SlotBase.html#aaca0d66f57bcfcf8c77a6522d30c1788">apf::SlotBase::Exec</a></div><div class="ttdeci">virtual void Exec(T1 param1)=0</div><div class="ttdoc">执行槽函数 </div></div>
+<div class="ttc" id="signal_8h_html_a01996d487162206af12d872678575ed4"><div class="ttname"><a href="signal_8h.html#a01996d487162206af12d872678575ed4">lock_mutex</a></div><div class="ttdeci">int lock_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">互斥锁加锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00120">oscore.cpp:120</a></div></div>
+<div class="ttc" id="classapf_1_1SlotBase_html_a12db8314ecec9c8873f0dfcbdb8deafd"><div class="ttname"><a href="classapf_1_1SlotBase.html#a12db8314ecec9c8873f0dfcbdb8deafd">apf::SlotBase::~SlotBase</a></div><div class="ttdeci">virtual ~SlotBase()</div><div class="ttdoc">默认析构函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00089">signal.h:89</a></div></div>
+<div class="ttc" id="signal_8h_html_a518452e4babb18c91965909070db571c"><div class="ttname"><a href="signal_8h.html#a518452e4babb18c91965909070db571c">unlock_mutex</a></div><div class="ttdeci">int unlock_mutex(pthread_mutex_t *mutex)</div><div class="ttdoc">互斥锁解锁 </div><div class="ttdef"><b>Definition:</b> <a href="oscore_8cpp_source.html#l00124">oscore.cpp:124</a></div></div>
+<div class="ttc" id="classapf_1_1SlotBase_html"><div class="ttname"><a href="classapf_1_1SlotBase.html">apf::SlotBase</a></div><div class="ttdoc">槽的基类 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00077">signal.h:77</a></div></div>
+<div class="ttc" id="classapf_1_1Signal_html_a464ed8d21403385da38d9f1eb003718a"><div class="ttname"><a href="classapf_1_1Signal.html#a464ed8d21403385da38d9f1eb003718a">apf::Signal::UnBind</a></div><div class="ttdeci">void UnBind(T *obj)</div><div class="ttdoc">取消与对象相关的所有槽绑定 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00264">signal.h:264</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html_a2a795f1f304ff9666c980a45808cdf5f"><div class="ttname"><a href="classapf_1_1Slot.html#a2a795f1f304ff9666c980a45808cdf5f">apf::Slot::equals</a></div><div class="ttdeci">bool equals(void *obj, void *func)</div><div class="ttdoc">判断槽对象是否与提供信息相等 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00166">signal.h:166</a></div></div>
+<div class="ttc" id="classapf_1_1Slot_html_ab4d41fecd4ccc217ff67f361d2104e22"><div class="ttname"><a href="classapf_1_1Slot.html#ab4d41fecd4ccc217ff67f361d2104e22">apf::Slot::Slot</a></div><div class="ttdeci">Slot(Slot&lt; T1 &gt; &amp;src)</div><div class="ttdoc">拷贝构造函数 </div><div class="ttdef"><b>Definition:</b> <a href="signal_8h_source.html#l00146">signal.h:146</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

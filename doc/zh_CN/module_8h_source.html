@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>APF: include/module.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">APF
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">C++ 插件框架(Application Plugin Framework)</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li><a href="examples.html"><span>示例</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">module.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="module_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*!**************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief 模块(插件)相关的宏定义文件</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Copyright (C) 2013 - 2013, Paul Zhou, &lt;qianlong.zhou@gmail.com&gt;.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * This software is licensed as described in the file COPYING, which</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * you should have received as part of this distribution.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * You may opt to use, copy, modify, merge, publish, distribute and/or sell</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * copies of the Software, and permit persons to whom the Software is</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * furnished to do so, under the terms of the COPYING file.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This software is distributed on an &quot;AS IS&quot; basis, WITHOUT WARRANTY OF ANY</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * KIND, either express or implied.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef MODULE_H</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MODULE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="classentry_8h.html">classentry.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="object_8h.html">object.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="singleobject_8h.html">singleobject.h</a>&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8h.html">interface.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>apf {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define APF_API extern &quot;C&quot; __declspec(dllexport)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define APF_API extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e">   35</a></span>&#160;<span class="preprocessor">#define APF_GET_MODULE_INFO_NAME &quot;APFGetModuleInfo&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define APF_SET_OBJECT_CREATOR_NAME &quot;APFSetObjectCreator&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> long (*APF_GET_MODULE_INFO)(<span class="keywordtype">unsigned</span> long, <a class="code" href="classapf_1_1ClassEntry.html">apf::ClassEntry</a>**);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">typedef</span> void (*APF_SET_OBJECT_CREATOR)(apf::APFCreateObjectFunc);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Module macros defines ////////////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// Define macros of class factory registry, such as APF_BEGIN_DEFINE_MODULE</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span><span class="comment">// module version macro</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37">   49</a></span>&#160;<span class="preprocessor">#define APF_VERSION(major,sub) (((unsigned long)major&lt;&lt;16) | sub)</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// max module version</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="module_8h.html#ad6ae0c1941f6e09eef70825fe1e1068b">   55</a></span>&#160;<span class="preprocessor">#define APF_MAX_VERSION 0x0FFFFFFF</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">// Begin group of module.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#define APF_BEGIN_MODULE(module_version, min_support_version, max_support_version)  \</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">APF_API unsigned long APFGetModuleInfo(unsigned long app_version, apf::ClassEntry** module_classes) {\</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">    const unsigned long version = module_version;\</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">    const unsigned long min_support = min_support_version;\</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">    const unsigned long max_support = max_support_version;\</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">    static apf::ClassEntry classes[] = {\</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// End group of module.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a">   90</a></span>&#160;<span class="preprocessor">#define APF_END_MODULE() \</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">        apf::ClassEntry() \</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">    };\</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">    *module_classes = classes;\</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">    return (app_version&gt;=min_support &amp;&amp; app_version &lt;= max_support) ? version : 0;\</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">}\</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">APF_API void APFSetObjectCreator(apf::APFCreateObjectFunc objcreator) {\</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">    apf::Module::Instance()-&gt;object_creator = objcreator;\</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">}\</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keywordtype">int</span> APFLoadInternalModules();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">// Begin group of internal module.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define APF_BEGIN_INTERNAL_MODULE()  \</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">int APFLoadInternalModules() {\</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">    static apf::ClassEntry classes[] = {\</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment">// End group of internal module.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303">  135</a></span>&#160;<span class="preprocessor">#define APF_END_INTERNAL_MODULE() \</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">        apf::ClassEntry() \</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">    };\</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">    int register_size = 0;\</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">    int class_len = sizeof(classes) / sizeof(apf::ClassEntry) - 1 ;\</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">    for (int i = 0; i &lt; class_len; i++) { \</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">        if (!apf::Class::RegisterClass(classes[i])) { \</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">            APF_DEBUG(&quot;Register internal class failed [classid:%s,name:%s]\n&quot;, classes[i].clsid.c_str(), classes[i].class_name);\</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">            continue;\</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">        }\</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">        register_size++;\</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">    }\</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">    return register_size;\</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">}\</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// Load internal modules function</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#define APFLoadInternalModules APFLoadInternalModules</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">// Register a regular class.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="module_8h.html#abf5d1e882418c45f0147b88b9192678e">  159</a></span>&#160;<span class="preprocessor">#define APF_CLASSMAP_ENTRY(clsid, cls)      \</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">    apf::ClassEntry(&quot;Object&lt;&quot; #cls &quot;&gt;&quot;, clsid,  \</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;ObjectCreatorFunc&gt;(&amp;apf::Object&lt;cls&gt;::CreateObject), \</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;ObjectDestroyerFunc&gt;(&amp;apf::Object&lt;cls&gt;::DestroyObject),  \</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;QueryInterfaceFunc&gt;(&amp;apf::Object&lt;cls&gt;::QueryInterface)),</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">// Register a single instance class.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="module_8h.html#ab216650d8221f61d91f71a47e823af79">  171</a></span>&#160;<span class="preprocessor">#define APF_CLASSMAP_ENTRY_SINGLETEN(clsid, cls)    \</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor">    apf::ClassEntry(&quot;SingleObject&lt;&quot; #cls &quot;&gt;&quot;, clsid,  \</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;ObjectCreatorFunc&gt;(&amp;apf::SingleObject&lt;cls&gt;::CreateObject),    \</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;ObjectDestroyerFunc&gt;(&amp;apf::SingleObject&lt;cls&gt;::DestroyObject), \</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">        reinterpret_cast&lt;QueryInterfaceFunc&gt;(&amp;apf::SingleObject&lt;cls&gt;::QueryInterface)),</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="classapf_1_1Module.html">  180</a></span>&#160;<span class="keyword">class </span><a class="code" href="classapf_1_1Module.html">Module</a> {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="classapf_1_1Module.html">Module</a>() : <a class="code" href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">object_creator</a>(0){}</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">  187</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="classapf_1_1Module.html">Module</a>* <a class="code" href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">Instance</a>() {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <span class="keyword">static</span> <a class="code" href="classapf_1_1Module.html">Module</a>* instance = <span class="keyword">new</span> <a class="code" href="classapf_1_1Module.html">Module</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> instance;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">  194</a></span>&#160;    apf::APFCreateObjectFunc <a class="code" href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">object_creator</a>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;};</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment">// End Module macros defines ///////////////////////////////////////////////</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;} <span class="comment">// end namespace</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">#endif // MODULE_H</span></div>
+<div class="ttc" id="classapf_1_1Module_html_a425df0bd29e3b4ff49b82252e5e93a9b"><div class="ttname"><a href="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b">apf::Module::object_creator</a></div><div class="ttdeci">apf::APFCreateObjectFunc object_creator</div><div class="ttdoc">对象创建函数 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00194">module.h:194</a></div></div>
+<div class="ttc" id="classentry_8h_html"><div class="ttname"><a href="classentry_8h.html">classentry.h</a></div><div class="ttdoc">类信息实体类头文件 </div></div>
+<div class="ttc" id="classapf_1_1Module_html"><div class="ttname"><a href="classapf_1_1Module.html">apf::Module</a></div><div class="ttdoc">模块类 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00180">module.h:180</a></div></div>
+<div class="ttc" id="classapf_1_1Module_html_a8690f3b39a552d8fb1d2b962509d436d"><div class="ttname"><a href="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d">apf::Module::Instance</a></div><div class="ttdeci">static Module * Instance()</div><div class="ttdoc">获取单实例 </div><div class="ttdef"><b>Definition:</b> <a href="module_8h_source.html#l00187">module.h:187</a></div></div>
+<div class="ttc" id="interface_8h_html"><div class="ttname"><a href="interface_8h.html">interface.h</a></div><div class="ttdoc">接口定义文件 </div></div>
+<div class="ttc" id="object_8h_html"><div class="ttname"><a href="object_8h.html">object.h</a></div><div class="ttdoc">类基本操作封装 </div></div>
+<div class="ttc" id="classapf_1_1ClassEntry_html"><div class="ttname"><a href="classapf_1_1ClassEntry.html">apf::ClassEntry</a></div><div class="ttdoc">类信息实体 类名、类ID、创建对象函数、销毁对象函数、查询接口函数等 </div><div class="ttdef"><b>Definition:</b> <a href="classentry_8h_source.html#l00051">classentry.h:51</a></div></div>
+<div class="ttc" id="singleobject_8h_html"><div class="ttname"><a href="singleobject_8h.html">singleobject.h</a></div><div class="ttdoc">单例类基本操作封装 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 四月 24日 星期四 16:06:18 , 为 APF使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

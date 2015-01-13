@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1370653627 source:/home/paul-ubuntu/workspace/apf/modules/config/main.cpp
+	"config_wrapper.h"
+	"module.h"
+
+1370601849 source:/home/paul-ubuntu/workspace/apf/modules/config/src/config.cpp
+	"config.h"
+
+1370653165 /home/paul-ubuntu/workspace/apf/modules/config/include/config.h
+	<string>
+	<map>
+	<iostream>
+	<fstream>
+	<sstream>
+
+1370590504 /home/paul-ubuntu/workspace/apf/include/interface.h
+	<string>
+	"classentry.h"
+	"class.h"
+
+1369582045 /home/paul-ubuntu/workspace/apf/include/classentry.h
+	<string>
+
+1370589076 /home/paul-ubuntu/workspace/apf/include/class.h
+	<windows.h>
+	<map>
+	"interface.h"
+	"classentry.h"
+
+1370316178 /home/paul-ubuntu/workspace/apf/include/module.h
+	"classentry.h"
+	"object.h"
+	"singleobject.h"
+
+1369581988 /home/paul-ubuntu/workspace/apf/include/object.h
+
+1369581982 /home/paul-ubuntu/workspace/apf/include/singleobject.h
+
+1370653611 /home/paul-ubuntu/workspace/apf/modules/config/include/config_wrapper.h
+	<string>
+	"interface.h"
+	"iconfig.h"
+
+1370653709 /home/paul-ubuntu/workspace/apf/modules/config/iconfig.h
+
+1370656561 source:/home/paul-ubuntu/workspace/apf/modules/config/src/config_wrapper.cpp
+	<iostream>
+	"config_wrapper.h"
+	"config.h"
+

@@ -1,0 +1,449 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#aa6f89d99309523d5011b6442a6e8c520"><param name="Name" value="__attribute__"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#aa6f89d99309523d5011b6442a6e8c520"><param name="Name" value="classentry.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#aabfd5f140c40573a60dce0c70f67ab14"><param name="Name" value="interface.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="union__UEndianTest.html"><param name="Name" value="_UEndianTest"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="union__UEndianTest.html#a4517bd9f6e3effdd2c768000a53f955f"><param name="Name" value="little_endian"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="union__UEndianTest.html#ae7d0d9f08ae5ea0a6001073626729b15"><param name="Name" value="value"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html"><param name="Name" value="apf::Class"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a50742cb0f1444f007a98991827df1e9f"><param name="Name" value="CreateObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a312847ff6e39c9aaeb8934c9c43d1d87"><param name="Name" value="DestroyObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#ad5187512f52f59231c1daa8b32697328"><param name="Name" value="HasClass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c"><param name="Name" value="RegisterClass"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a7c190d900e3e06814d2344ba0953ac7e"><param name="Name" value="UnRegisterClass"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html"><param name="Name" value="apf::ClassEntry"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a5065977aebddb223080c6099aa518ada"><param name="Name" value="class_name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a08506f3c503dfd33acb0cf3dbc7ebe24"><param name="Name" value="ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a54d79c5bf063f0d9e86ec7741ef76924"><param name="Name" value="clsid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a86324128baa8db732315eba2388ec2c7"><param name="Name" value="create_object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a838e6aca6cd6fdb72a15368665fcb82f"><param name="Name" value="destroy_object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a93a7caf3d97de25c2c09a4836b71cba0"><param name="Name" value="equals"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a9959c1183be2cfaf51c3b817428b567e"><param name="Name" value="query_interface"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html"><param name="Name" value="apf::Interface"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192"><param name="Name" value="class_info"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040"><param name="Name" value="Create"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ad13ed478a1860ce6402275d504d9ca63"><param name="Name" value="Interface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ae467b150711d00d96cc74f8626ade50b"><param name="Name" value="operator bool"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a6297e14533529bbec5b629f35faea24f"><param name="Name" value="operator!"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ad0944a2aaca6b449e63b23d50dfece03"><param name="Name" value="operator!="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a49b5c069a63781e540408813253f21fc"><param name="Name" value="operator->"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a937b53f2a7ffc481145045c0f2db76fa"><param name="Name" value="operator="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#aff2bf1caa04680bb984668471e421448"><param name="Name" value="operator=="></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2"><param name="Name" value="P"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816"><param name="Name" value="reference_count"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c"><param name="Name" value="Release"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f"><param name="Name" value="Reset"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a875b4bd0680611aa2f195cca7acb04ee"><param name="Name" value="~Interface"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Module.html"><param name="Name" value="apf::Module"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d"><param name="Name" value="Instance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b"><param name="Name" value="object_creator"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html"><param name="Name" value="apf::Object"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#ab54c4f00a678fff46f8484d3d0a82aa4"><param name="Name" value="CreateObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#a2d3d69e8e490476b8f3b0c8a8426597c"><param name="Name" value="DestroyObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#a96ea9cad4f989564c448b406e9b653eb"><param name="Name" value="QueryInterface"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html"><param name="Name" value="apf::PluginManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html"><param name="Name" value="apf::PluginManager::ModuleItem"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a7db471f352bc6a801c1c37f0a4aa8e48"><param name="Name" value="classes"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a641b3ac350fcf19012604ee81c0cb7f1"><param name="Name" value="hmodule"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a585382363f4205212e617299a864eb72"><param name="Name" value="version"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html"><param name="Name" value="apf::PluginManager"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#adfeaed7b46e513f7ce8c9b39b4decf9a"><param name="Name" value="instance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a7831efe0e65447843e5bf3a3971cedc1"><param name="Name" value="Load"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a4d36f2c29c78d5ed08012be98ce18211"><param name="Name" value="modules"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#abf4725e84313cac4630be312a56ade0c"><param name="Name" value="PluginManager"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a972e5c78122efe5a21abffb6a799f279"><param name="Name" value="RegisterClasses"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#ac490b278ccf3ad16464013b8dedb2f45"><param name="Name" value="SetVersion"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a3d99f1010b3b552a35681e8c0b157603"><param name="Name" value="UnLoad"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a39216ce65ae035a0b1cfb5d071feb4c3"><param name="Name" value="UnLoadAll"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a5db18027dfc16842e56aa6100f48b7a6"><param name="Name" value="UnRegisterClasses"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a3d639911a092a56e00746f126afe1e96"><param name="Name" value="~PluginManager"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html"><param name="Name" value="apf::Signal"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#acc8bb316fed6c6f9f8cdc7a364d4f284"><param name="Name" value="Bind"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#a8aa08bc762212854b497352f2d3ba0df"><param name="Name" value="operator()"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#ad175ebc60b424ecf2b2b2d0a3050777b"><param name="Name" value="UnBind"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html"><param name="Name" value="apf::SingleObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a105bd8e12c5e3706827871ad436b8fb8"><param name="Name" value="CreateObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a7097c70e1cc181b6ce1683a0718729e9"><param name="Name" value="DestroyObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a336ad34f500d622ececf51241cd63e96"><param name="Name" value="Instance"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a5b946981dc3b0818884eb6a379ac7ebe"><param name="Name" value="QueryInterface"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html"><param name="Name" value="apf::Slot"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a2a795f1f304ff9666c980a45808cdf5f"><param name="Name" value="equals"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a0d05dc710c723227df8af711e0362030"><param name="Name" value="Exec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3"><param name="Name" value="obj"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a6f61a70c878c5ad402d7a27036faa9b6"><param name="Name" value="Slot"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#aae739ec2473f4ca3d8c708244106c8be"><param name="Name" value="~Slot"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotBase.html"><param name="Name" value="apf::SlotBase"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotBase.html#aaca0d66f57bcfcf8c77a6522d30c1788"><param name="Name" value="Exec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotBase.html#a12db8314ecec9c8873f0dfcbdb8deafd"><param name="Name" value="~SlotBase"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotImpl.html"><param name="Name" value="apf::SlotImpl"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotImpl.html#a5f4be570eac646369a9e0ef93d0a37e1"><param name="Name" value="Exec"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotImpl.html#aa926ab8183e1e996441b9197c349af85"><param name="Name" value="SlotImpl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a84263d3d466e1d866cf8f79d12cd7c25"><param name="Name" value="APF_API"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a775df2b8796c7afc6fdac1393ae928f5"><param name="Name" value="APF_BEGIN_CLASS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a9799e3053403210dad962dba7bdd9b7c"><param name="Name" value="APF_BEGIN_INTERNAL_MODULE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad05161b065f301502c69142be60a6116"><param name="Name" value="APF_BEGIN_MODULE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#abf5d1e882418c45f0147b88b9192678e"><param name="Name" value="APF_CLASSMAP_ENTRY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ab216650d8221f61d91f71a47e823af79"><param name="Name" value="APF_CLASSMAP_ENTRY_SINGLETEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8h.html#ace39c9c2c6e90d588c8001ef1c12ccb9"><param name="Name" value="APF_DEBUG"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a31d0da59402735416dfa715b94f479ea"><param name="Name" value="APF_DECLARE_CLASSID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#acbc4d603617d53b2a0afe4a3b7f7527d"><param name="Name" value="APF_DECLARE_INTERFACE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a3de2b029f089c00fdba5406b2d0f0fdc"><param name="Name" value="APF_END_CLASS"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303"><param name="Name" value="APF_END_INTERNAL_MODULE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a"><param name="Name" value="APF_END_MODULE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#a5b213b7d3511c94a3210896b24704b29"><param name="Name" value="APF_GET_MODULE_INFO"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e"><param name="Name" value="APF_GET_MODULE_INFO_NAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a52cb242e7fddcd3d183e089b7745221f"><param name="Name" value="APF_INTERFACE_ENTRY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad6ae0c1941f6e09eef70825fe1e1068b"><param name="Name" value="APF_MAX_VERSION"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#a9e66b308cc392b619d727ab9478836c4"><param name="Name" value="APF_SET_OBJECT_CREATOR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#af969d26915c172c70789631abb946dea"><param name="Name" value="APF_SET_OBJECT_CREATOR_NAME"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a97217d3ace267489651fc919917a5c6d"><param name="Name" value="APF_USE_INTERFACE_ENTRY"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37"><param name="Name" value="APF_VERSION"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15"><param name="Name" value="APFClassID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#ae60946f4aa74b84baa6664798dc97e08"><param name="Name" value="APFConnect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#a08416f6bf0cb43f74e3b57f57ac6f7c8"><param name="Name" value="APFCreateObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#a08416f6bf0cb43f74e3b57f57ac6f7c8"><param name="Name" value="interface.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#a08416f6bf0cb43f74e3b57f57ac6f7c8"><param name="Name" value="interface.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#ade1ab8d6f84f5f259d03db40b5966ace"><param name="Name" value="APFCreateObjectFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#af9674dccf399cb4642d3619d8ab5b65e"><param name="Name" value="APFDisconnect"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="namespaceapf.html#ab12406c2d91997ce298d0c6c7de0f7f1"><param name="Name" value="APFHashKey"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#affaddf064ec3d20cc79d7217bf120cbe"><param name="Name" value="APFInterfaceID"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a30b6a7a09214af6c910e64ea66b4d2b7"><param name="Name" value="APFLoadInternalModules"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a4e13e12572b3ee9c271f7ecfb28c38b4"><param name="Name" value="begin_thread"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a4e13e12572b3ee9c271f7ecfb28c38b4"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a4e13e12572b3ee9c271f7ecfb28c38b4"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#acc8bb316fed6c6f9f8cdc7a364d4f284"><param name="Name" value="Bind"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a095773cec3eb4e1b829d3ee3b516d192"><param name="Name" value="class_info"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a5065977aebddb223080c6099aa518ada"><param name="Name" value="class_name"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a5065977aebddb223080c6099aa518ada"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html"><param name="Name" value="classentry.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#aa6f89d99309523d5011b6442a6e8c520"><param name="Name" value="__attribute__"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a46f6756503d8121265e6fef379ea9f15"><param name="Name" value="APFClassID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#affaddf064ec3d20cc79d7217bf120cbe"><param name="Name" value="APFInterfaceID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#aadfb05fafcbec39702e5cf077a705358"><param name="Name" value="class_name"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971"><param name="Name" value="ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef"><param name="Name" value="clsid"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac"><param name="Name" value="create_object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d"><param name="Name" value="destroy_object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9"><param name="Name" value="equals"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a2eb292cfdb85e4fb449e22a04fbbe3ca"><param name="Name" value="ObjectCreatorFunc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a2e789ba0e956bbec16703e86ab5e64e0"><param name="Name" value="ObjectDestroyerFunc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d"><param name="Name" value="query_interface"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a90f20bea511697c5c662943a9c6064de"><param name="Name" value="QueryInterfaceFunc"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a08506f3c503dfd33acb0cf3dbc7ebe24"><param name="Name" value="ClassEntry"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a08506f3c503dfd33acb0cf3dbc7ebe24"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a361e731260e7d1931ddd7a3903edb971"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a7db471f352bc6a801c1c37f0a4aa8e48"><param name="Name" value="classes"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ab6b958915c8122e70a0ab1726c881d2e"><param name="Name" value="clock_tick"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ab6b958915c8122e70a0ab1726c881d2e"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab6b958915c8122e70a0ab1726c881d2e"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#afdbb9d84bd17efd2ae7290e664992c48"><param name="Name" value="closesocket"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a54d79c5bf063f0d9e86ec7741ef76924"><param name="Name" value="clsid"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a54d79c5bf063f0d9e86ec7741ef76924"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a73a375b94a52f815ab8b3b3236969eef"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a4fab87602dfd451e6a99cf7f28268040"><param name="Name" value="Create"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a86324128baa8db732315eba2388ec2c7"><param name="Name" value="create_object"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a86324128baa8db732315eba2388ec2c7"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ac7c76426d4bee707890ac143412df5ac"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a50742cb0f1444f007a98991827df1e9f"><param name="Name" value="CreateObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a50742cb0f1444f007a98991827df1e9f"><param name="Name" value="apf::Class"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#ab54c4f00a678fff46f8484d3d0a82aa4"><param name="Name" value="apf::Object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a105bd8e12c5e3706827871ad436b8fb8"><param name="Name" value="apf::SingleObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a838e6aca6cd6fdb72a15368665fcb82f"><param name="Name" value="destroy_object"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a838e6aca6cd6fdb72a15368665fcb82f"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a3cb3fd80f3045657ccd43d993544797d"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a312847ff6e39c9aaeb8934c9c43d1d87"><param name="Name" value="DestroyObject"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a312847ff6e39c9aaeb8934c9c43d1d87"><param name="Name" value="apf::Class"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#a2d3d69e8e490476b8f3b0c8a8426597c"><param name="Name" value="apf::Object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a7097c70e1cc181b6ce1683a0718729e9"><param name="Name" value="apf::SingleObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a93a7caf3d97de25c2c09a4836b71cba0"><param name="Name" value="equals"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a93a7caf3d97de25c2c09a4836b71cba0"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a2a795f1f304ff9666c980a45808cdf5f"><param name="Name" value="apf::Slot"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ab5bcf662dd6bb83796bce22e00c7e6d9"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a0d05dc710c723227df8af711e0362030"><param name="Name" value="Exec"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a0d05dc710c723227df8af711e0362030"><param name="Name" value="apf::Slot"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotBase.html#aaca0d66f57bcfcf8c77a6522d30c1788"><param name="Name" value="apf::SlotBase"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotImpl.html#a5f4be570eac646369a9e0ef93d0a37e1"><param name="Name" value="apf::SlotImpl"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a44740bf21b4b4bed7e3dfabb6a5a73f2"><param name="Name" value="g_endianTest"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a44740bf21b4b4bed7e3dfabb6a5a73f2"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a44740bf21b4b4bed7e3dfabb6a5a73f2"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#ad5187512f52f59231c1daa8b32697328"><param name="Name" value="HasClass"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a641b3ac350fcf19012604ee81c0cb7f1"><param name="Name" value="hmodule"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8h.html#ae008d4ee8d8604f7e2e56d5ebb99afc7"><param name="Name" value="HMODULE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#aa84a29002ab81c719c0d07bb446296e0"><param name="Name" value="INFINITE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a2716baf3426ba9a20ea22428552b453b"><param name="Name" value="init_mutex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a2716baf3426ba9a20ea22428552b453b"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894"><param name="Name" value="oscore.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894"><param name="Name" value="signal.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ae5d0b76ddb348316445f778b706d9a25"><param name="Name" value="init_semaphore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ae5d0b76ddb348316445f778b706d9a25"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a2737ec3e56b4441035d1725df192c394"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Module.html#a8690f3b39a552d8fb1d2b962509d436d"><param name="Name" value="Instance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#adfeaed7b46e513f7ce8c9b39b4decf9a"><param name="Name" value="instance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a336ad34f500d622ececf51241cd63e96"><param name="Name" value="Instance"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8cpp.html"><param name="Name" value="interface.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html"><param name="Name" value="interface.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#aabfd5f140c40573a60dce0c70f67ab14"><param name="Name" value="__attribute__"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a775df2b8796c7afc6fdac1393ae928f5"><param name="Name" value="APF_BEGIN_CLASS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a31d0da59402735416dfa715b94f479ea"><param name="Name" value="APF_DECLARE_CLASSID"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#acbc4d603617d53b2a0afe4a3b7f7527d"><param name="Name" value="APF_DECLARE_INTERFACE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a3de2b029f089c00fdba5406b2d0f0fdc"><param name="Name" value="APF_END_CLASS"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a52cb242e7fddcd3d183e089b7745221f"><param name="Name" value="APF_INTERFACE_ENTRY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a97217d3ace267489651fc919917a5c6d"><param name="Name" value="APF_USE_INTERFACE_ENTRY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#a08416f6bf0cb43f74e3b57f57ac6f7c8"><param name="Name" value="APFCreateObject"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#ade1ab8d6f84f5f259d03db40b5966ace"><param name="Name" value="APFCreateObjectFunc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="interface_8h.html#ab12406c2d91997ce298d0c6c7de0f7f1"><param name="Name" value="APFHashKey"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ad13ed478a1860ce6402275d504d9ca63"><param name="Name" value="Interface"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a26769957ec1a2beaf223f33b66ee64ab"><param name="Name" value="INVALID_SOCKET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="union__UEndianTest.html#a4517bd9f6e3effdd2c768000a53f955f"><param name="Name" value="little_endian"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a8782a401fbf55261460863fc2f8df1ce"><param name="Name" value="LITTLE_ENDIAN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a7831efe0e65447843e5bf3a3971cedc1"><param name="Name" value="Load"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a13b324bbfc8aa8eb384633fb449dd0dc"><param name="Name" value="lock_mutex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a13b324bbfc8aa8eb384633fb449dd0dc"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a01996d487162206af12d872678575ed4"><param name="Name" value="oscore.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a01996d487162206af12d872678575ed4"><param name="Name" value="signal.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8cpp.html#ab99ded389af74001a6298fc9e44e74e5"><param name="Name" value="MAX_PATH"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html"><param name="Name" value="module.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a84263d3d466e1d866cf8f79d12cd7c25"><param name="Name" value="APF_API"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a9799e3053403210dad962dba7bdd9b7c"><param name="Name" value="APF_BEGIN_INTERNAL_MODULE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad05161b065f301502c69142be60a6116"><param name="Name" value="APF_BEGIN_MODULE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#abf5d1e882418c45f0147b88b9192678e"><param name="Name" value="APF_CLASSMAP_ENTRY"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ab216650d8221f61d91f71a47e823af79"><param name="Name" value="APF_CLASSMAP_ENTRY_SINGLETEN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a6c58f87ad0eb10f25ec7e930bdd33303"><param name="Name" value="APF_END_INTERNAL_MODULE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a6fb8118520cfbc0d0009846b3075e20a"><param name="Name" value="APF_END_MODULE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a5b213b7d3511c94a3210896b24704b29"><param name="Name" value="APF_GET_MODULE_INFO"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a7b7f86179667d4aa6391a0c5dedc278e"><param name="Name" value="APF_GET_MODULE_INFO_NAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad6ae0c1941f6e09eef70825fe1e1068b"><param name="Name" value="APF_MAX_VERSION"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a9e66b308cc392b619d727ab9478836c4"><param name="Name" value="APF_SET_OBJECT_CREATOR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#af969d26915c172c70789631abb946dea"><param name="Name" value="APF_SET_OBJECT_CREATOR_NAME"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#ad4cde1a90d1825bcd822b806e19c1e37"><param name="Name" value="APF_VERSION"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="module_8h.html#a30b6a7a09214af6c910e64ea66b4d2b7"><param name="Name" value="APFLoadInternalModules"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a4d36f2c29c78d5ed08012be98ce18211"><param name="Name" value="modules"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a6d5214d1f7774c98bbfb5a2f18a4d95c"><param name="Name" value="msleep"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a4246b1c736167fccb219f610611ec682"><param name="Name" value="NET16"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a026447fbf22a6547b69813db8f94b85a"><param name="Name" value="NET32"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#ab7eff02353ac522e23466b3b6756ecb3"><param name="Name" value="obj"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Module.html#a425df0bd29e3b4ff49b82252e5e93a9b"><param name="Name" value="object_creator"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a2eb292cfdb85e4fb449e22a04fbbe3ca"><param name="Name" value="ObjectCreatorFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a2e789ba0e956bbec16703e86ab5e64e0"><param name="Name" value="ObjectDestroyerFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ae467b150711d00d96cc74f8626ade50b"><param name="Name" value="operator bool"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#ad0944a2aaca6b449e63b23d50dfece03"><param name="Name" value="operator!="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a6297e14533529bbec5b629f35faea24f"><param name="Name" value="operator!"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#a8aa08bc762212854b497352f2d3ba0df"><param name="Name" value="operator()"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a49b5c069a63781e540408813253f21fc"><param name="Name" value="operator->"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#aff2bf1caa04680bb984668471e421448"><param name="Name" value="operator=="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a937b53f2a7ffc481145045c0f2db76fa"><param name="Name" value="operator="></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html"><param name="Name" value="oscore.cpp"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a4e13e12572b3ee9c271f7ecfb28c38b4"><param name="Name" value="begin_thread"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ab6b958915c8122e70a0ab1726c881d2e"><param name="Name" value="clock_tick"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a44740bf21b4b4bed7e3dfabb6a5a73f2"><param name="Name" value="g_endianTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a2716baf3426ba9a20ea22428552b453b"><param name="Name" value="init_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ae5d0b76ddb348316445f778b706d9a25"><param name="Name" value="init_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a13b324bbfc8aa8eb384633fb449dd0dc"><param name="Name" value="lock_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a43afb42390c09724ad82c3dfca4002d8"><param name="Name" value="post_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a9e924ff42cc9eaac6130f029a37d700b"><param name="Name" value="random_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ad0f5254341ba9a99f35fa618f1caa57c"><param name="Name" value="uninit_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a35be636a1d6516de673b3f6bd342f391"><param name="Name" value="uninit_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a8890e1e7a80d43912e72586faf879235"><param name="Name" value="unlock_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a1fc89082247e3da89c411880c0cc1cf8"><param name="Name" value="wait_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a"><param name="Name" value="wait_thread"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a58c8b2ad0ea491a6642e5e1cbd358c89"><param name="Name" value="yield"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html"><param name="Name" value="oscore.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a4e13e12572b3ee9c271f7ecfb28c38b4"><param name="Name" value="begin_thread"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab6b958915c8122e70a0ab1726c881d2e"><param name="Name" value="clock_tick"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#afdbb9d84bd17efd2ae7290e664992c48"><param name="Name" value="closesocket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a44740bf21b4b4bed7e3dfabb6a5a73f2"><param name="Name" value="g_endianTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#aa84a29002ab81c719c0d07bb446296e0"><param name="Name" value="INFINITE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894"><param name="Name" value="init_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a2737ec3e56b4441035d1725df192c394"><param name="Name" value="init_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a26769957ec1a2beaf223f33b66ee64ab"><param name="Name" value="INVALID_SOCKET"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a8782a401fbf55261460863fc2f8df1ce"><param name="Name" value="LITTLE_ENDIAN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a01996d487162206af12d872678575ed4"><param name="Name" value="lock_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a6d5214d1f7774c98bbfb5a2f18a4d95c"><param name="Name" value="msleep"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a4246b1c736167fccb219f610611ec682"><param name="Name" value="NET16"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a026447fbf22a6547b69813db8f94b85a"><param name="Name" value="NET32"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab6742f11e48962f399b10899ede70ec8"><param name="Name" value="post_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a9e924ff42cc9eaac6130f029a37d700b"><param name="Name" value="random_int"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab8a4083c1e5d7c4172936f59e67ce798"><param name="Name" value="SOCKET"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb"><param name="Name" value="THREAD_FUNC"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb"><param name="Name" value="UEndianTest"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a5b45fb41988604e9393eecc929208679"><param name="Name" value="uninit_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#afa7e85780db98165a8e9422aa83410ff"><param name="Name" value="uninit_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a518452e4babb18c91965909070db571c"><param name="Name" value="unlock_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a16e911fc3033caee489d1edb8b78e90e"><param name="Name" value="wait_semaphore"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a"><param name="Name" value="wait_thread"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a58c8b2ad0ea491a6642e5e1cbd358c89"><param name="Name" value="yield"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a68554712172eede0c79b9aaa29be08d2"><param name="Name" value="P"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8cpp.html"><param name="Name" value="plugin_manager.cpp"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8h.html"><param name="Name" value="plugin_manager.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8h.html#ace39c9c2c6e90d588c8001ef1c12ccb9"><param name="Name" value="APF_DEBUG"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="plugin__manager_8h.html#ae008d4ee8d8604f7e2e56d5ebb99afc7"><param name="Name" value="HMODULE"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#abf4725e84313cac4630be312a56ade0c"><param name="Name" value="PluginManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a43afb42390c09724ad82c3dfca4002d8"><param name="Name" value="post_semaphore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a43afb42390c09724ad82c3dfca4002d8"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab6742f11e48962f399b10899ede70ec8"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a9959c1183be2cfaf51c3b817428b567e"><param name="Name" value="query_interface"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1ClassEntry.html#a9959c1183be2cfaf51c3b817428b567e"><param name="Name" value="apf::ClassEntry"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#ac620c57239d0a1643f90d404c96eac8d"><param name="Name" value="classentry.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#a96ea9cad4f989564c448b406e9b653eb"><param name="Name" value="QueryInterface"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Object.html#a96ea9cad4f989564c448b406e9b653eb"><param name="Name" value="apf::Object"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SingleObject.html#a5b946981dc3b0818884eb6a379ac7ebe"><param name="Name" value="apf::SingleObject"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classentry_8h.html#a90f20bea511697c5c662943a9c6064de"><param name="Name" value="QueryInterfaceFunc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a9e924ff42cc9eaac6130f029a37d700b"><param name="Name" value="random_int"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a9e924ff42cc9eaac6130f029a37d700b"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a9e924ff42cc9eaac6130f029a37d700b"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a3c3ea6fd24cfd80d089a799e0fca4816"><param name="Name" value="reference_count"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a8603f7280a02bee082705520d7cb8d7c"><param name="Name" value="RegisterClass"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a972e5c78122efe5a21abffb6a799f279"><param name="Name" value="RegisterClasses"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#acac961e6dd4d236c169284d2fbb8846c"><param name="Name" value="Release"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a5250ce98bd102050aba69e1e66b0fa6f"><param name="Name" value="Reset"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#ac490b278ccf3ad16464013b8dedb2f45"><param name="Name" value="SetVersion"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html"><param name="Name" value="signal.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#ae60946f4aa74b84baa6664798dc97e08"><param name="Name" value="APFConnect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#af9674dccf399cb4642d3619d8ab5b65e"><param name="Name" value="APFDisconnect"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a1a7c2242bb0cb95a71cd3e2e80a94894"><param name="Name" value="init_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a01996d487162206af12d872678575ed4"><param name="Name" value="lock_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#aabbcb0bbcbcb6adcf20d63cc22f83649"><param name="Name" value="signals"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#aa2ad9c27624efec8c3fce893e35bbc81"><param name="Name" value="slots"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a5b45fb41988604e9393eecc929208679"><param name="Name" value="uninit_mutex"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a518452e4babb18c91965909070db571c"><param name="Name" value="unlock_mutex"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#aabbcb0bbcbcb6adcf20d63cc22f83649"><param name="Name" value="signals"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#a6f61a70c878c5ad402d7a27036faa9b6"><param name="Name" value="Slot"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotImpl.html#aa926ab8183e1e996441b9197c349af85"><param name="Name" value="SlotImpl"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#aa2ad9c27624efec8c3fce893e35bbc81"><param name="Name" value="slots"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ab8a4083c1e5d7c4172936f59e67ce798"><param name="Name" value="SOCKET"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#ac7537c66fd3eceac0d9f1d9b610b14eb"><param name="Name" value="THREAD_FUNC"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#aa1c8d3105020f3d09506b7be7736dffb"><param name="Name" value="UEndianTest"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Signal.html#ad175ebc60b424ecf2b2b2d0a3050777b"><param name="Name" value="UnBind"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ad0f5254341ba9a99f35fa618f1caa57c"><param name="Name" value="uninit_mutex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#ad0f5254341ba9a99f35fa618f1caa57c"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a5b45fb41988604e9393eecc929208679"><param name="Name" value="oscore.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a5b45fb41988604e9393eecc929208679"><param name="Name" value="signal.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a35be636a1d6516de673b3f6bd342f391"><param name="Name" value="uninit_semaphore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a35be636a1d6516de673b3f6bd342f391"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#afa7e85780db98165a8e9422aa83410ff"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a3d99f1010b3b552a35681e8c0b157603"><param name="Name" value="UnLoad"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a39216ce65ae035a0b1cfb5d071feb4c3"><param name="Name" value="UnLoadAll"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a8890e1e7a80d43912e72586faf879235"><param name="Name" value="unlock_mutex"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a8890e1e7a80d43912e72586faf879235"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a518452e4babb18c91965909070db571c"><param name="Name" value="oscore.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="signal_8h.html#a518452e4babb18c91965909070db571c"><param name="Name" value="signal.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Class.html#a7c190d900e3e06814d2344ba0953ac7e"><param name="Name" value="UnRegisterClass"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a5db18027dfc16842e56aa6100f48b7a6"><param name="Name" value="UnRegisterClasses"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="union__UEndianTest.html#ae7d0d9f08ae5ea0a6001073626729b15"><param name="Name" value="value"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="structapf_1_1PluginManager_1_1ModuleItem.html#a585382363f4205212e617299a864eb72"><param name="Name" value="version"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a1fc89082247e3da89c411880c0cc1cf8"><param name="Name" value="wait_semaphore"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a1fc89082247e3da89c411880c0cc1cf8"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a16e911fc3033caee489d1edb8b78e90e"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a"><param name="Name" value="wait_thread"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a81b8c9c1f4fc788cd1ab9e24bc4c958a"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a58c8b2ad0ea491a6642e5e1cbd358c89"><param name="Name" value="yield"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8cpp.html#a58c8b2ad0ea491a6642e5e1cbd358c89"><param name="Name" value="oscore.cpp"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="oscore_8h.html#a58c8b2ad0ea491a6642e5e1cbd358c89"><param name="Name" value="oscore.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Interface.html#a875b4bd0680611aa2f195cca7acb04ee"><param name="Name" value="~Interface"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1PluginManager.html#a3d639911a092a56e00746f126afe1e96"><param name="Name" value="~PluginManager"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1Slot.html#aae739ec2473f4ca3d8c708244106c8be"><param name="Name" value="~Slot"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="classapf_1_1SlotBase.html#a12db8314ecec9c8873f0dfcbdb8deafd"><param name="Name" value="~SlotBase"></OBJECT>
+</UL>
+</BODY>
+</HTML>

@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1370598817 source:/home/paul-ubuntu/workspace/apf/modules/logviewer/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<winsock2.h>
+	<sys/socket.h>
+	<arpa/inet.h>
+	<unistd.h>
+
