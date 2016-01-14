@@ -1,5 +1,6 @@
 
 # APF
+[中文介绍](https://github.com/paulzql/apf/blob/master/README.zh_CN.md)
 
  **APF(Application Plugin Framework) It is a lightweight plugin framework, written in C++, support windows, linux and other platforms.**
  
